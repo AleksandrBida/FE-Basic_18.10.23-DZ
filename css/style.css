@@ -5,11 +5,13 @@
 }
 
 img {
-  max-width: 75%;
+  max-width: 60%;
 }
 
 .card {
   max-width: 350px;
+  display: inline-block;
+  margin: 25px 5px;
 }
 
 a {
@@ -17,6 +19,12 @@ a {
 }
 .class {
   max-width: 350px;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
+  text-align: center;
 }
 
 .animals {
