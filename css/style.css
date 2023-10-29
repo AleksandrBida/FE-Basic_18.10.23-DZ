@@ -4,6 +4,43 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 75%;
+}
+
+.card {
+  max-width: 350px;
+}
+
 a {
   color: inherit;
+}
+.class {
+  max-width: 350px;
+}
+
+.animals {
+  color: coral;
+}
+
+.car {
+  color: mediumspringgreen;
+}
+
+.moon {
+  color: slateblue;
+}
+
+.autumn {
+  color: darkorange;
+}
+
+.west {
+  color: gold;
+}
+
+.description {
+  color: saddlebrown;
+  font-style: italic;
+  font-size: small;
 }
