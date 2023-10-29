@@ -12,10 +12,10 @@ img {
   max-width: 350px;
   display: inline-block;
   margin: 25px 5px;
-}
-
-a {
-  color: inherit;
+  border: 3px solid;
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 00 00 20px;
 }
 
 .btn {
