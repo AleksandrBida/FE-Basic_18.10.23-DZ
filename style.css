@@ -1,0 +1,42 @@
+#maintitle {
+  color: brown;
+}
+.spisok b {
+  color: blue;
+}
+.spisok li {
+  color: teal;
+}
+.citetext b {
+  color: rgb(102, 4, 112);
+}
+.citetext {
+  color: goldenrod;
+}
+#cite {
+  color: blueviolet;
+}
+.description {
+  color: grey;
+}
+
+.wrap {
+  color: darkblue;
+}
+.wrap b {
+  color: red;
+}
+.wrap > p {
+  color: chocolate;
+}
+
+.colortext1,
+.colortext2,
+.colortext3 {
+  color: dodgerblue;
+}
+.coltext1,
+.coltext2,
+.coltext3 {
+  color: goldenrod;
+}
