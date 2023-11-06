@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.conteiner {
+  max-width: 1110px;
+  margin: 30px 50px;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  color: #303030;
+  /* max-width: 800px; */
+  /* font-weight: 700; */
+}
+h3 {
+  color: #303030;
+  /* font-weight: 700; */
+}
+.name {
+  color: #303030;
+  /* font-weight: 700; */
+}
+
+img {
+  max-width: 100%;
+  box-shadow: 0 0 20px;
+  border-radius: 0.5rem;
+  border: 0px solid;
+}
+
+.link {
+  color: blue;
+  text-align: right;
+  display: block;
+  text-decoration: none;
+}
+
+.card {
+  max-width: 300px;
+  padding: 1rem;
+  display: inline-block;
+  border-radius: 1rem;
+  margin: 50px 0px;
+  border: 0px solid;
+  box-shadow: 0 0 30px rgba(50, 50, 100, 0.25);
+}
+
+html {
+  /* font-family: "Pacifico", cursive; */
+  font-family: Pacifico, sans-serif;
+  font-size: 18px;
+  /* line-height: 1.7; */
+  color: #909090;
+  font-weight: 400;
+}
+
+p {
+  padding: 0.5em;
+}
