@@ -3,7 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  /* font-family: "Pacifico", cursive; */
+  font-family: Pacifico, sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #909090;
+  font-weight: 400;
+}
 .conteiner {
   max-width: 1110px;
   margin: 30px 50px;
@@ -19,10 +26,12 @@ h1 {
 }
 h3 {
   color: #303030;
+  line-height: 1.2;
   font-weight: 700;
 }
 .name {
   color: #303030;
+  line-height: 1.2;
   font-weight: 700;
 }
 
@@ -33,11 +42,13 @@ img {
   border: 0px solid;
 }
 
-.link {
+.btm {
   color: blue;
   text-align: right;
-  display: block;
+  display: inline-block;
   text-decoration: none;
+  min-width: 280px;
+  padding: 0.5rem 1rem;
 }
 
 .card {
@@ -48,15 +59,6 @@ img {
   margin: 50px 0px;
   border: 0px solid;
   box-shadow: 0 0 30px rgba(50, 50, 100, 0.25);
-}
-
-html {
-  /* font-family: "Pacifico", cursive; */
-  font-family: Pacifico, sans-serif;
-  font-size: 18px;
-  line-height: 1.7;
-  color: #909090;
-  font-weight: 400;
 }
 
 p {
