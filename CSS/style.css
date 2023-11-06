@@ -13,16 +13,17 @@
 
 h1 {
   color: #303030;
-  /* max-width: 800px; */
-  /* font-weight: 700; */
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-weight: 700;
 }
 h3 {
   color: #303030;
-  /* font-weight: 700; */
+  font-weight: 700;
 }
 .name {
   color: #303030;
-  /* font-weight: 700; */
+  font-weight: 700;
 }
 
 img {
@@ -53,7 +54,7 @@ html {
   /* font-family: "Pacifico", cursive; */
   font-family: Pacifico, sans-serif;
   font-size: 18px;
-  /* line-height: 1.7; */
+  line-height: 1.7;
   color: #909090;
   font-weight: 400;
 }
