@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 html {
-  /* font-family: "Pacifico", cursive; */
-  font-family: Pacifico, sans-serif;
+  font-family: "Pacifico-Regular";
+  /* font-family: Pacifico, sans-serif; */
   font-size: 18px;
   line-height: 1.7;
   color: #909090;
