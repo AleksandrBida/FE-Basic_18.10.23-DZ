@@ -43,14 +43,16 @@ img {
 }
 
 .btm {
+  text-align: right;
+}
+
+a {
   color: blue;
   text-align: right;
   display: inline-block;
   text-decoration: none;
-  min-width: 280px;
   padding: 0.5rem 1rem;
 }
-
 .card {
   max-width: 300px;
   padding: 1rem;
