@@ -231,7 +231,7 @@ main {
 }
 
 .images {
-  margin-right: 1rem;
+  margin-right: 20px;
 }
 
 .description-card {
@@ -289,18 +289,21 @@ iframe {
 .footer {
   background-color: var(--secondary-color);
   color: #ffffff;
+  /* display: inline-block; */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.john {
+.John {
   width: 130px;
   height: 19px;
-}
-h3 {
   font-family: "Roboto", sans-serif;
   font-size: 21px;
   line-height: 1.1;
   font-weight: 500;
+  margin-bottom: 20px;
 }
+
 .All-rights-reserved {
   font-family: "Roboto", sans-serif;
   font-size: 13px;
