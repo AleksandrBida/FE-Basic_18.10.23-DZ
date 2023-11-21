@@ -21,8 +21,7 @@ html {
 }
 body {
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+  display: inline-block;
 }
 
 .container {
@@ -38,16 +37,10 @@ body {
   background-color: var(--primary-color);
   max-width: 100%;
   padding-top: 79px;
-  padding-left: auto;
-}
-.nav {
-  min-width: 646px;
-  min-height: 27px;
+  padding-bottom: 81px;
 }
 
 .Homepage {
-  width: 98px;
-  height: 27px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -55,8 +48,6 @@ body {
   color: var(--secondary-color);
 }
 .About-author {
-  width: 137px;
-  height: 27px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -66,8 +57,6 @@ body {
   color: #000000;
 }
 .Works {
-  width: 63px;
-  height: 27px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -78,8 +67,6 @@ body {
 }
 
 .Process {
-  width: 81px;
-  height: 27px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -90,8 +77,6 @@ body {
 }
 
 .Contacts {
-  width: 99px;
-  height: 27px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -120,10 +105,8 @@ a {
   font-weight: 500;
   line-height: 1.6;
   color: #000000;
+  margin-top: 70px;
   max-width: 541px;
-  margin-top: 151px;
-  margin-left: auto;
-  min-height: auto;
   display: inline-block;
 }
 
@@ -142,7 +125,6 @@ a {
   line-height: 1.6;
   color: #727272;
   max-width: 540px;
-  height: 67px;
   display: inline-block;
   text-align: left;
 }
@@ -157,22 +139,18 @@ p {
   width: 225px;
   height: 65px;
   padding: 19px 20px 40px 40px;
-  margin-top: 65px;
-  margin-left: auto;
-  margin-bottom: 141px;
-}
-.wrap-text {
-  max-width: 143px;
-  margin-right: 26px;
-  color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
   text-align: center;
+  margin-top: 65px;
+  margin-left: auto;
+  margin-bottom: 141px;
 }
 .write_me {
   background-color: var(--secondary-color);
+  color: #ffffff;
 }
 /*----------------------------About--------------------*/
 .about-wrap {
@@ -183,8 +161,7 @@ p {
 
 .about-me {
   font-family: "Roboto", sans-serif;
-  width: 403px;
-  height: 30px;
+
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -206,9 +183,10 @@ p {
 
 .About {
   padding-top: 112px;
-  padding-left: 690px;
   padding-bottom: 100px;
-  padding-right: 690px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*--------------------------main--------------------------*/
@@ -222,9 +200,11 @@ main {
   background-color: var(--secondary-color);
 }
 
+.cards-wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 .card {
-  margin-top: 100px;
-  margin-bottom: 100px;
   display: inline-block;
   margin-left: auto;
   margin-right: 49px;
@@ -259,8 +239,7 @@ main {
 }
 .video-text {
   font-family: "Roboto", sans-serif;
-  width: 403px;
-  height: 30px;
+
   margin-bottom: 50px;
   margin-left: 68px;
   margin-right: 68px;
@@ -268,15 +247,11 @@ main {
 
 .video-title {
   width: 540px;
-  height: 147px;
+
   margin-top: 100px;
   margin-bottom: 57px;
   margin-left: auto;
   margin-right: auto;
-}
-.location_text3 {
-  width: 540px;
-  height: 67px;
 }
 
 iframe {
@@ -289,14 +264,13 @@ iframe {
 .footer {
   background-color: var(--secondary-color);
   color: #ffffff;
-  /* display: inline-block; */
+
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .John {
-  width: 130px;
-  height: 19px;
+  max-width: 130px;
   font-family: "Roboto", sans-serif;
   font-size: 21px;
   line-height: 1.1;
@@ -310,5 +284,4 @@ iframe {
   font-weight: 400;
   line-height: 1.6;
   max-width: 193px;
-  max-height: 12px;
 }
