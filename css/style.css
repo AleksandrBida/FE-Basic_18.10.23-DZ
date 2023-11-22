@@ -78,7 +78,6 @@ a {
   margin-top: 60px;
   color: #727272;
   max-width: 540px;
-
   text-align: left;
 }
 
@@ -89,7 +88,6 @@ a {
   line-height: 1.6;
   color: #727272;
   max-width: 540px;
-
   text-align: center;
 }
 
@@ -101,8 +99,6 @@ a {
   padding: 20px 40px 20px 40px;
   margin-top: 65px;
   margin-bottom: 141px;
-  margin-left: auto;
-  margin-right: auto;
 }
 /*----------------------------About--------------------*/
 .about-wrap {
@@ -117,16 +113,11 @@ a {
   font-weight: 500;
   line-height: 1.1;
   margin-bottom: 50px;
-
-  /* text-align: center; */
 }
 
 .About {
   padding-top: 112px;
   padding-bottom: 100px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*--------------------------main--------------------------*/
@@ -146,7 +137,6 @@ main {
 }
 .card {
   display: inline-block;
-  margin-left: auto;
   margin-right: 49px;
 }
 
@@ -199,7 +189,6 @@ iframe {
 .footer {
   background-color: var(--secondary-color);
   color: #ffffff;
-
   padding-top: 50px;
   padding-bottom: 50px;
 }
