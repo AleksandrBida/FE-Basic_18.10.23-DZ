@@ -74,7 +74,6 @@ a {
 }
 
 .text1 {
-  text-align: left;
   margin-top: 60px;
   color: #727272;
   max-width: 540px;
@@ -167,9 +166,10 @@ main {
   background-color: var(--primary-color);
 }
 .video-text {
-  margin-bottom: 50px;
-  margin-left: 68px;
-  margin-right: 68px;
+  font-size: 32px;
+  padding-bottom: 50px;
+  padding-left: 68px;
+  padding-right: 68px;
 }
 
 .video-title {
