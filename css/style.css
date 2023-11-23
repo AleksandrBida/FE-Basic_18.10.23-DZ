@@ -1,9 +1,9 @@
 :root {
   --container-width: 1110px;
   --basic-space: 1rem;
-  --primary-color: #eeeff1;
-  --secondary-color: #34547a;
-  --text-color: #727272;
+  --primary-color: #81a36b;
+  --secondary-color: #161616;
+  --text-color: #d8d8d6;
 }
 
 * {
@@ -63,33 +63,6 @@ a {
   background-color: var(--primary-color);
 }
 
-.first-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 1.6;
-  color: #000000;
-  padding-top: 70px;
-  max-width: 541px;
-}
-
-.text1 {
-  margin-top: 60px;
-  color: #727272;
-  max-width: 540px;
-  text-align: left;
-}
-
-.description {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
-  color: #727272;
-  max-width: 540px;
-  text-align: center;
-}
-
 .write_me {
   background-color: var(--secondary-color);
   color: #ffffff;
@@ -108,7 +81,7 @@ main {
 /*-----------------------numbers-------------------------*/
 
 .numbers {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .cards-wrap {
