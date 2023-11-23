@@ -1,0 +1,171 @@
+:root {
+  --container-width: 1110px;
+  --basic-space: 1rem;
+  --primary-color: #eeeff1;
+  --secondary-color: #34547a;
+  --text-color: #727272;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+  color: #202020;
+}
+body {
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container-width) + var(--basic-space) * 2);
+  padding-left: var(--basic-space);
+  padding-right: var(--basic-space);
+  margin-left: auto;
+  margin-right: auto;
+}
+/*-----------------header=----------------------------------*/
+.header {
+  background-color: var(--primary-color);
+  max-width: 100%;
+  padding-top: 79px;
+  padding-bottom: 81px;
+}
+
+.nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: left;
+  color: #000000;
+}
+
+.Homepage {
+  color: var(--secondary-color);
+}
+
+a {
+  text-decoration: none;
+}
+.nav-link + .nav-link {
+  margin-left: 42px;
+}
+/*------------------------first-screen----------------------*/
+.first-screen {
+  background-color: var(--primary-color);
+}
+
+.first-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #000000;
+  padding-top: 70px;
+  max-width: 541px;
+}
+
+.text1 {
+  margin-top: 60px;
+  color: #727272;
+  max-width: 540px;
+  text-align: left;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #727272;
+  max-width: 540px;
+  text-align: center;
+}
+
+.write_me {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  max-width: 225px;
+  display: inline-block;
+  padding: 20px 40px 20px 40px;
+  margin-top: 65px;
+  margin-bottom: 141px;
+}
+
+/*--------------------------main--------------------------*/
+main {
+  background-color: #d8d8d6;
+}
+
+/*-----------------------numbers-------------------------*/
+
+.numbers {
+  background-color: var(--secondary-color);
+}
+
+.cards-wrap {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.card {
+  display: inline-block;
+  margin-right: 49px;
+}
+
+.images {
+  margin-right: 20px;
+}
+
+.description-card {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.title-card {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.card-text {
+  float: inline-end;
+}
+/*--------------------------video------------------------------*/
+
+/*-------------------------------footer------------------------------*/
+
+.footer {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.John {
+  max-width: 130px;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  line-height: 1.1;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.All-rights-reserved {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 193px;
+}
