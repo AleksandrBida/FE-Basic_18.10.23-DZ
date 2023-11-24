@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DZ_12</title>
+    <title>DZ_10</title>
     <link rel="stylesheet" href="fonts/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,14 +12,16 @@
 <body class="Desktop">
     <header class="header">
         <div class="container">
-            <a href="#" class="logo">Amelia F</a>
-            <nav class="nav">
-                <a href="#" class="nav-link ">Главная</a>
-                <a href="#" class="nav-link ">О нас</a>
-                <a href="#" class="nav-link ">Как мы работаем</a>
-                <a href="#" class="nav-link ">Наши работы</a>
-                <a href="#" class="nav-link ">Контакты</a>
-            </nav>
+            <div class="flex-header">
+                <a href="#" class="logo">Amelia F</a>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Главная</a>
+                    <a href="#" class="nav-link">О нас</a>
+                    <a href="#" class="nav-link">Как мы работаем</a>
+                    <a href="#" class="nav-link">Наши работы</a>
+                    <a href="#" class="nav-link">Контакты</a>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -27,20 +29,25 @@
     <main>
         <section class="main-screen">
             <div class="container">
-                <div class="text-wrap">
-                    <h1 class="main-title">Amelia Flowers</h1>
-                    <p class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
-                        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                    <a href="#" class="order-text buttom">Заказать букет</a>
-                    <a href="#" class="help-flor buttom">Помощь флориста</a>
+                <div class="wrapper">
+                    <div class="text-wrap">
+                        <h1 class="main-title">Amelia Flowers</h1>
+                        <p class="text lorem">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                            Lorem
+                            Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                        <a href="#" class="order-text buttom">Заказать букет</a>
+                        <a href="#" class="help-flor buttom">Помощь флориста</a>
+                    </div>
+                    <img src="images/Rectangle 82.png" alt="Flowers">
                 </div>
-                <img src="images/Rectangle 82.png" alt="Flowers">
                 <div class="about">
                     <h3 class="text-title">О НАС</h3>
-                    <p class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem
+                    <p class="text lorem">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+                        Lorem
                         Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                 </div>
             </div>
+
         </section>
 
 
@@ -78,30 +85,35 @@
             <div class="container">
                 <div class="blok1-wrap">
                     <img src="images/rectangle 80.png" alt="Flowers">
-                    <h3 class="text-title">Как мы работаем</h3>
-                    <p class="text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-                        вэб-дизайне. Lorem
-                        Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                    <div class="text-blok1">
+                        <h3 class="text-title">Как мы работаем</h3>
+                        <p class="text lorem">Lorem Ipsum - это текст-"рыба", часто используемый в печати и
+                            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI
+                            века.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="blok2">
             <div class="container">
-                <h3 class="text-title">Как мы работаем</h3>
-                <div class="blok2-wrap">
-                    <img src="images/Rectangle 87.png" alt="Flowers">
-                    <p class="text">Букет "Флоренция"</p>
-                </div>
-                <div class="blok2-wrap">
-                    <img src="images/Rectangle 89.png" alt="Flowers">
-                    <p class="text">Букет "Флоренция"</p>
-                </div>
-                <div class="blok2-wrap">
-                    <img src="images/Rectangle 88.png" alt="Flowers">
-                    <p class="text">Букет "Флоренция"</p>
-                </div>
+                <h3 class="text-title text-blok2">Наши работы</h3>
 
+                <div class="container-blok2">
+
+                    <div class="blok2-wrap">
+                        <img src="images/Rectangle 87.png" alt="Flowers">
+                        <p class="text buket">Букет "Флоренция"</p>
+                    </div>
+                    <div class="blok2-wrap">
+                        <img src="images/Rectangle 89.png" alt="Flowers">
+                        <p class="text buket">Букет "Флоренция"</p>
+                    </div>
+                    <div class="blok2-wrap">
+                        <img src="images/Rectangle 88.png" alt="Flowers">
+                        <p class="text buket">Букет "Флоренция"</p>
+                    </div>
+                </div>
             </div>
 
         </section>
@@ -110,16 +122,22 @@
     <footer class="footer">
         <div class="container">
             <div class="contact-wrap">
-                <h3 class="contact">Контакты</h3>
-                <p class="text ">+380517328964</p>
-                <p class="text">+380517328964</p>
-                <p class="text">Харьков, ул Сумская 115</p>
+                <div class="contact-text">
+                    <h3 class="contact">Контакты</h3>
+                    <p class="text ">+380517328964</p>
+                    <p class="text tel">+380517328964</p>
+                    <p class="text ">Харьков, ул Сумская 115</p>
+                </div>
+                <div class="">
+                    <h3 class="logo ">Amelia F</h3>
+                </div>
+
+                <div class="seti">
+                    <h3 class="contact">Мы в соц. сетях</h3>
+
+                    <img src="images/иконци.png" alt="icon">
+                </div>
             </div>
-            <h3 class="logo">Amelia F</h3>
-
-            <h3 class="contact">Мы в соц. сетях</h3>
-
-            <img src="images/иконци.png" alt="icon">
 
             <p class="year">(c) 2023. </p>
         </div>
