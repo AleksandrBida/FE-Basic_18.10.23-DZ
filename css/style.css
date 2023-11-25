@@ -213,6 +213,14 @@ main {
   background-color: var(--primary-color);
   color: var(--text-color);
 }
+.seti {
+  text-align: center;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 .contact-wrap {
   display: flex;
   justify-content: space-between;
@@ -228,6 +236,7 @@ main {
 .tel {
   padding: 20px 0;
 }
+
 .year {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
