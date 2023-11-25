@@ -92,6 +92,7 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--text-color);
 }
 
 /*------------------------main-screen----------------------*/
@@ -156,8 +157,8 @@ main {
   display: inline-block;
   text-align: center;
   margin-right: 33px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .description-card {
@@ -234,8 +235,10 @@ main {
   line-height: 1.6;
   padding-bottom: 40px;
 }
+.contact-text {
+}
 .tel {
-  padding: 20px 0;
+  padding: 10px 0;
 }
 
 .year {
