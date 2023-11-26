@@ -175,12 +175,10 @@ main {
 .blok1-wrap {
   display: flex;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  gap: 30px;
 }
 .text-blok1 {
   max-width: 540px;
-  padding-left: 30px;
 }
 
 /*-------------------------blok2------------------------------*/
@@ -235,8 +233,7 @@ main {
   line-height: 1.6;
   padding-bottom: 40px;
 }
-.contact-text {
-}
+
 .tel {
   padding: 10px 0;
 }
