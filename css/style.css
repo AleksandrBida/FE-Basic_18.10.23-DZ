@@ -69,12 +69,19 @@ main {
   color: #161513;
   text-align: left;
 }
-
+.text_white56x64 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 1.14;
+  color: #ffffff;
+  text-align: center;
+}
 .text_16x32 {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2;
   color: #161513;
   text-align: center;
 }
@@ -83,15 +90,15 @@ main {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 31px;
   font-weight: 400;
-  line-height: 40px;
+  line-height: 1.29;
   color: #161513;
   text-align: left;
 }
-.text_blak18x32 {
+.text_18x32 {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.77;
   color: #161513;
   text-align: left;
 }
@@ -99,7 +106,7 @@ main {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 1.33;
   color: #e94d35;
   text-align: left;
 }
@@ -108,7 +115,7 @@ main {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 45px;
   font-weight: 400;
-  line-height: 56px;
+  line-height: 1.24;
   color: #161513;
   text-align: center;
 }
@@ -117,7 +124,7 @@ main {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.77;
   color: #ffffff;
   text-align: left;
 }
@@ -125,7 +132,7 @@ main {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.6;
   color: #161513;
   text-align: left;
 }
@@ -133,7 +140,7 @@ main {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 24px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.33;
   color: #161513;
   text-align: left;
 }
@@ -141,7 +148,7 @@ main {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 20px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 1.6;
   color: #ffffff;
   text-align: center;
 }
@@ -149,7 +156,16 @@ main {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-align: center;
+}
+
+.text_white16x32 {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.66;
   color: #ffffff;
   text-align: center;
 }
@@ -157,7 +173,7 @@ main {
   font-family: Bai Jamjuree;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.7;
   color: #f2f1ef;
   text-align: left;
 }
@@ -189,40 +205,113 @@ img {
   color: var(--text-color);
 }
 
+.talk1 {
+  padding: 9px 26px 9px 26px;
+}
 /*------------------------main-screen----------------------*/
 .wrapper {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 43px;
 }
 
-.text-wrap {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 574px;
-}
 .tayler {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1.14;
   text-align: left;
+  color: #161513;
 }
-.offer a {
-  text-decoration: none;
+.offer {
+  margin-top: 35px;
+  text-align: left;
+}
+.talk2 a {
+  padding: 13px 33px 13px 33px;
+  border: 1px solid #161513;
+  color: #161513;
+}
+.got a {
+  background-color: #161513;
+  padding: 13px 33px 13px 33px;
+  border: 1px solid #161513;
+  color: #ffffff;
 }
 .buttom {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.16;
-  color: #161616;
-  padding: 16px 20px 16px 20px;
-  border: 1px solid #81a36b;
-  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
 }
 
-/*--------------------------main--------------------------*/
+/*--------------------------band--------------------------*/
+
+.band {
+  display: flex;
+}
+.bandblak {
+  background-color: #161513;
+  width: 137.5px;
+  height: 32px;
+}
+/*-------------------------------blok1------------------------------*/
+.wrapper_blok1 {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 61px;
+}
+
+.wrap1_blok1 {
+  max-width: 408px;
+
+  margin-bottom: 58px;
+}
+.wrap1_blok1 h3 {
+  margin-top: 21px;
+}
+.wrap1_blok2 h4 {
+  margin-bottom: 36px;
+}
+.wrap1_blok2 {
+}
+.data .text_12x16 {
+  margin-top: 27px;
+  margin-bottom: 9px;
+}
+.data {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-------------------------------blok 2------------------------------*/
+
+.wrapper_blok2 {
+  display: flex;
+  border: 2px solid #332f29;
+  margin-top: 61px;
+  margin-bottom: 60px;
+}
+
+.wrap2 {
+  align-self: center;
+  flex-basis: 352px;
+}
+.wrap2_blok1 p {
+  text-align: center;
+}
+.wrap2_blok2 {
+  background-color: #161513;
+  border: 1px solid #161513;
+  padding-top: 21px;
+  padding-bottom: 24px;
+}
+.wrap2_blok3 p {
+  text-align: center;
+}
 
 /*-------------------------------footer------------------------------*/
 
