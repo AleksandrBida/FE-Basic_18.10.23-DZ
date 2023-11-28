@@ -440,6 +440,12 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+.wrap5 h4 {
+  margin: 34px 0 0 34px;
+}
+.wrap5 p {
+  margin: 28px 49px 30px 34px;
+}
 
 .wrap5_blok1 {
   max-width: 510px;
