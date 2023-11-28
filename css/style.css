@@ -223,12 +223,8 @@ img {
 }
 
 .tayler {
-  font-family: "Bai Jamjuree", sans-serif;
-  font-size: 56px;
-  font-weight: 400;
-  line-height: 1.14;
-  text-align: left;
-  color: #161513;
+  max-width: 674px;
+  text-transform: uppercase;
 }
 .offer {
   margin-top: 35px;
@@ -387,8 +383,16 @@ img {
 .wrap4 p {
   text-align: center;
 }
-.wrap4 {
-  margin: 36px;
+.wrapper4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 60px;
+}
+.wrap4_blok {
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
 }
 .Portfolio {
   margin-top: 32px;
@@ -396,10 +400,8 @@ img {
 }
 .wrap4_blok1 {
   display: flex;
+  justify-content: space-between;
   gap: 44px;
-}
-.Art p {
-  max-width: 181px;
 }
 .Art {
   display: flex;
@@ -407,6 +409,22 @@ img {
   justify-content: space-around;
   text-align: left;
 }
+.Art p {
+  max-width: 181px;
+}
+.Branding p {
+  max-width: 130px;
+}
+.Web-Design p {
+  max-width: 150px;
+}
+.Motion p {
+  max-width: 213px;
+}
+.Motion {
+  max-width: 447px;
+}
+
 /*-------------------------------footer------------------------------*/
 
 .footer {
