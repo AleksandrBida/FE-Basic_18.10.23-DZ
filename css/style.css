@@ -185,6 +185,12 @@ img {
   margin-top: 60px;
   margin-bottom: 40px;
 }
+.bg-red {
+  background-color: #e94d35;
+}
+.t-l {
+  text-align: left;
+}
 /*-----------------header=----------------------------------*/
 .header {
   background-color: var(--primary-color);
@@ -267,7 +273,6 @@ img {
 
 .wrap1_blok1 {
   max-width: 408px;
-
   margin-bottom: 58px;
 }
 .wrap1_blok1 h3 {
@@ -370,6 +375,7 @@ img {
   width: 48px;
   height: 48px;
   background-color: #e94d35;
+  line-height: 2.7;
 }
 
 /*------------------------------blok4_------------------------------*/
@@ -384,11 +390,23 @@ img {
 .wrap4 {
   margin: 36px;
 }
-.Awards {
+.Portfolio {
   margin-top: 32px;
   margin-bottom: 9px;
 }
-
+.wrap4_blok1 {
+  display: flex;
+  gap: 44px;
+}
+.Art p {
+  max-width: 181px;
+}
+.Art {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: left;
+}
 /*-------------------------------footer------------------------------*/
 
 .footer {
