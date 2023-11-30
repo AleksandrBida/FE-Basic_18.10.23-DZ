@@ -239,10 +239,15 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 43px;
+  padding-bottom: 50px;
 }
-
+.man {
+  width: 100%;
+  max-width: 505px;
+}
 .tayler {
-  max-width: 674px;
+  width: 100%;
+  min-width: 615px;
   text-transform: uppercase;
 }
 .offer {
@@ -285,8 +290,8 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin-top: 50px;
-  margin-bottom: 61px;
+  padding-top: 50px;
+  padding-bottom: 61px;
 }
 
 .wrap1_blok1 {
@@ -314,8 +319,7 @@ img {
 .wrapper_blok2 {
   display: flex;
   border: 2px solid #332f29;
-  margin-top: 61px;
-  margin-bottom: 60px;
+  margin: 61px 0 60px 0;
 }
 
 .wrap2 {
@@ -344,7 +348,7 @@ img {
   text-align: center;
 }
 .wrap3 {
-  margin: 36px;
+  padding: 60px 0 60px 0;
 }
 .Awards {
   margin-top: 32px;
@@ -372,7 +376,7 @@ img {
   display: flex;
   justify-content: space-between;
   border: 2px solid #161513;
-  margin-bottom: 55px;
+  margin-bottom: 60px;
 }
 
 .text2blok3 {
@@ -410,6 +414,7 @@ img {
   align-items: center;
   flex-direction: column;
   gap: 60px;
+  padding-top: 60px;
 }
 .wrap4_blok {
   display: flex;
@@ -461,6 +466,7 @@ img {
   align-items: center;
   flex-direction: column;
   gap: 60px;
+  padding: 60px 0 80px 0;
 }
 
 .wrapper5 p {
@@ -537,6 +543,14 @@ img {
   flex-direction: column;
   align-items: center;
   margin: 60px;
+}
+.wrapper_blok7 {
+  position: relative;
+}
+.star240 {
+  position: absolute;
+  right: -10px;
+  bottom: 93px;
 }
 .Articles {
   margin: 22px 0 25px 0;
@@ -685,8 +699,7 @@ img {
   gap: 48px;
   width: 100%;
   max-width: 1060px;
-  padding-top: 66px;
-  padding-bottom: 25px;
+  padding: 66px 0 25px 0;
 }
 
 .up-part {
@@ -704,10 +717,21 @@ img {
   gap: 46px;
   align-items: center;
   justify-content: space-between;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 .guide button {
   cursor: pointer;
   background-color: #131416;
 }
 .socials {
+  display: flex;
+  gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  border: 1px solid #969186;
+  border-radius: 24px 24px;
 }
