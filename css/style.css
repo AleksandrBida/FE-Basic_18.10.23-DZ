@@ -1,6 +1,6 @@
 :root {
-  --container1-width: 1280px;
-  --container2-width: 1060px;
+  --container-width: 1280px;
+  --container-small-width: 1060px;
   --basic-space: 1rem;
   --primary-color: #f2f1ef;
   --secondary-color: #e94d35;
@@ -28,23 +28,19 @@ main {
   background-color: var(--primary-color);
 }
 
-.container1 {
+.container {
   width: 100%;
-  max-width: calc(var(--container1-width) + var(--basic-space) * 2);
+  max-width: calc(var(--container-width) + var(--basic-space) * 2);
   padding-left: var(--basic-space);
   padding-right: var(--basic-space);
   margin-left: auto;
   margin-right: auto;
 }
 
-.container2 {
-  width: 100%;
-  max-width: calc(var(--container2-width) + var(--basic-space) * 2);
-  padding-left: var(--basic-space);
-  padding-right: var(--basic-space);
-  margin-left: auto;
-  margin-right: auto;
+.container.small {
+  max-width: calc(var(--container-small-width) + var(--basic-space) * 2);
 }
+
 .text_16x24 {
   font-family: "Bai Jamjuree", sans-serif;
   font-size: 16px;
@@ -424,7 +420,7 @@ img {
 }
 .wrap4_blok1 {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 44px;
 }
 .Art {
@@ -722,6 +718,7 @@ img {
 .guide button {
   cursor: pointer;
   background-color: #131416;
+  border: none;
 }
 .socials {
   display: flex;
