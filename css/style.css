@@ -1,8 +1,8 @@
 :root {
-  --container-width: 1110px;
+  --container-width: 1240px;
   --basic-space: 1rem;
-  --primary-color: #81a36b;
-  --secondary-color: #d8d8d6;
+  --primary-color: #ffffff;
+  --secondary-color: #153416;
   --text-color: #161616;
 }
 
@@ -47,4 +47,10 @@ img {
   max-width: 100%;
 }
 
+.background-50 {
+  background-color: #16151580;
+}
+.background-25 {
+  background-color: #e9e9e940;
+}
 /*-----------------registr=----------------------------------*/
