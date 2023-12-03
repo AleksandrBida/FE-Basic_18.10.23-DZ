@@ -14,11 +14,13 @@
 
 html {
   font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.17;
   font-weight: 400;
-  color: #161616;
+  color: #ffffff;
+  text-align: center;
 }
+
 body {
   min-height: 100vh;
 }
@@ -32,217 +34,17 @@ body {
   margin-right: auto;
 }
 
-.text-title {
-  font-family: "Vetrino", sans-serif;
-  font-size: 32px;
+.text-green {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  line-height: 1.17;
   font-weight: 400;
-  line-height: 1.06;
-  color: #000000;
+  color: #153416;
   text-align: center;
 }
-.text {
-  max-width: 540px;
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  font-weight: 400;
-  color: #161616;
-}
+
 img {
   max-width: 100%;
 }
-.lorem {
-  margin-top: 60px;
-  margin-bottom: 40px;
-}
-/*-----------------header=----------------------------------*/
-.header {
-  background-color: var(--primary-color);
-}
-.flex-header {
-  display: flex;
-  gap: 70px;
-  align-items: center;
-  padding-top: 21px;
-  padding-bottom: 20px;
-}
-.nav {
-  display: flex;
-  flex-grow: 1;
-  justify-content: space-around;
-  align-items: baseline;
-}
-.logo {
-  font-family: "Vetrino", sans-serif;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 1.07;
-  color: #161616;
-}
 
-.nav-link {
-  align-items: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.6;
-  text-align: left;
-  color: #000000;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-/*------------------------main-screen----------------------*/
-.wrapper {
-  display: flex;
-  align-items: center;
-  padding-bottom: 60px;
-}
-
-.text-wrap {
-  max-width: 540px;
-  margin-right: 30px;
-}
-.main-title {
-  font-family: "Vetrino", sans-serif;
-  font-size: 62px;
-  font-weight: 400;
-  line-height: 1.08;
-}
-
-.buttom {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.16;
-
-  color: #161616;
-}
-
-.order-text {
-  background-color: var(--primary-color);
-  padding: 16px 20px 16px 20px;
-  margin-right: 60px;
-}
-
-.help-flor {
-  border: 1px solid #81a36b;
-  padding: 16px 20px 16px 19px;
-}
-
-/*--------------------------main--------------------------*/
-main {
-  background-color: var(--secondary-color);
-}
-.about {
-  max-width: 540px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-}
-
-/*-----------------------advantages-------------------------*/
-
-.advantages {
-  background-color: var(--primary-color);
-  margin-top: 60px;
-  margin-bottom: 60px;
-}
-
-.card {
-  display: inline-block;
-  text-align: center;
-  margin-right: 33px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-.description-card {
-  color: #161616;
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.22;
-  margin-top: 20px;
-}
-
-/*-------------------------blok1------------------------------*/
-
-.blok1-wrap {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-.text-blok1 {
-  max-width: 540px;
-}
-
-/*-------------------------blok2------------------------------*/
-
-.container-blok2 {
-  display: flex;
-  gap: 30px;
-  padding-bottom: 80px;
-}
-.blok2-wrap {
-  max-width: 350px;
-  text-align: center;
-  background-color: var(--primary-color);
-  padding: 1rem;
-  /* border-radius: 20px; */
-  /* box-shadow: 0 0 22px; */
-  /* border: 0px solid; */
-}
-.buket {
-  padding-top: 23px;
-  padding-bottom: 40px;
-}
-.text-blok2 {
-  padding-top: 60px;
-  padding-bottom: 80px;
-}
-/*-------------------------------footer------------------------------*/
-
-.footer {
-  display: flex;
-  align-items: flex-start;
-  background-color: var(--primary-color);
-  color: var(--text-color);
-}
-.seti {
-  text-align: center;
-}
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.contact-wrap {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 60px;
-}
-.contact {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.6;
-  padding-bottom: 40px;
-}
-
-.tel {
-  padding: 10px 0;
-}
-
-.year {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: center;
-  padding: 40px 0 60px;
-}
+/*-----------------registr=----------------------------------*/
