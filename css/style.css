@@ -3,7 +3,6 @@
   --basic-space: 1rem;
   --primary-color: #ffffff;
   --secondary-color: #153416;
-  --text-color: #161616;
 }
 
 * {
@@ -18,7 +17,6 @@ html {
   line-height: 1.17;
   font-weight: 400;
   color: #ffffff;
-  text-align: center;
 }
 
 body {
@@ -35,12 +33,7 @@ body {
 }
 
 .text-green {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  line-height: 1.17;
-  font-weight: 400;
   color: #153416;
-  text-align: center;
 }
 
 img {
@@ -50,7 +43,56 @@ img {
 .background-50 {
   background-color: #16151580;
 }
-.background-25 {
-  background-color: #e9e9e940;
+
+.flex {
+  display: flex;
 }
+
 /*-----------------registr=----------------------------------*/
+
+.main {
+  background: url(../images/unsplesh.png) no-repeat center/cover;
+  min-height: 100vh;
+}
+
+.wrapper {
+  padding-top: 72px;
+  /* position: relative;
+  position: absolute;
+  right: 0px; */
+}
+
+.background-25 {
+  display: flex;
+  justify-content: flex-end;
+  height: 100vh;
+  min-width: 496px;
+  flex-shrink: 0;
+  background: rgba(233, 233, 233, 0.25);
+  backdrop-filter: blur(5px);
+}
+.registration-button {
+  width: 100%;
+  min-width: 168px;
+
+  flex-shrink: 0;
+
+  padding: 19px 70px 19px 71px;
+  font-size: 12px;
+  background: #153416;
+  color: #fff;
+  border-radius: 30px;
+  border: 1px solid #153416;
+  cursor: pointer;
+}
+
+.registration-button:hover {
+  background-color: #9d45a0;
+}
+body .wrapper {
+  display: flex;
+  justify-content: flex-end;
+
+  height: 100vh;
+  margin: 0;
+}
