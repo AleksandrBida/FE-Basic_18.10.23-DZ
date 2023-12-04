@@ -50,8 +50,14 @@ img {
 .justify-center {
   justify-content: center;
 }
+.justify-between {
+  justify-content: space-between;
+}
 .items-center {
   align-items: center;
+}
+.bg-none {
+  background-color: none;
 }
 /*-----------------registr=----------------------------------*/
 
@@ -100,8 +106,13 @@ body .wrapper {
   border: 1px solid #153416;
   padding: 2px 0 2px 2px;
 }
-.registration p {
-  padding: 11px 0 11px 48px;
+.pasiv {
+  padding: 11px 50px 11px 48px;
+  background: none;
+  color: #fff;
+  border: 0;
+
+  cursor: pointer;
 }
 
 .h1 {
@@ -109,19 +120,24 @@ body .wrapper {
   font-size: 30px;
   line-height: 1.16;
   margin-bottom: 29px;
+  text-align: center;
 }
 .wrap {
   width: 100%;
   max-width: 340px;
+  flex-direction: column;
+  align-items: center;
+  min-width: 340px;
+  min-height: 418px;
+  margin-top: 75px;
 }
-.email {
-}
+
 ::placeholder {
   color: #fff;
 }
 .placeholder {
   min-width: 340px;
-  min-height: 44px;
+  border: 0;
   padding: 15px 0 15px 20px;
   border-radius: 30px;
   background: #929191;
@@ -130,10 +146,25 @@ body .wrapper {
   margin: 15px 0 21px 0;
 }
 
-.wrap {
-  flex-direction: column;
-  align-items: center;
+.checkbox {
+  gap: 10px;
+  background: none;
+}
+.chek {
+  margin-right: 60px;
+}
+
+.forgot-password {
+  margin-left: 50px;
+}
+
+.open {
   min-width: 340px;
-  min-height: 418px;
-  margin-top: 75px;
+  min-height: 44px;
+  border-radius: 30px;
+  background: #153416;
+  color: var(--primary-color);
+  margin-top: 30px;
+  cursor: pointer;
+  border: 0px;
 }

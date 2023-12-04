@@ -22,13 +22,21 @@
                 <form action="https://fom.in.ua/echo" class="  " method="post">
                     <div class="flex registration items-center">
                         <button class="registration-button ">Вхід</button>
-                        <p class="flex items-center">Регистрация</p>
+                        <button class="pasiv flex items-center " disabled>Реєстрація</button>
                     </div>
 
-                    <div class="wrap flex ">
+                    <div class="wrap ">
                         <h1 class="h1 ">Вхід</h1>
-                        <input type="email" name="" placeholder="Введите E-mail" class="email placeholder">
-                        <input type="password" name="" placeholder="Пароль" class="password placeholder">
+                        <input type="email" name="email" placeholder="Введіть E-mail" class="email placeholder">
+                        <input type="password" name="password" placeholder="Пароль" class="password placeholder">
+
+                        <label for="" class="checkbox flex  items-center">
+                            <input type="checkbox">
+                            <span class="chek flex"> Запам'ятати мене</span>
+                            <a href="#" class="forgot-password text-green flex">Забыли пароль?</a>
+                        </label>
+
+                        <button type="submit" class="open ">Войти</button>
                     </div>
                 </form>
 
