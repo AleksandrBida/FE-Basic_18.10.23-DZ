@@ -166,8 +166,8 @@ body .wrapper {
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkbox {
-  background-image: url(images/Vector3.png);
-  background-size: 25px;
+  background-image: url(../images/Vector3.png);
+  background-size: 12px;
   background-position: center;
   border-color: green;
 }
