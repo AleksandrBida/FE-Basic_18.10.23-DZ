@@ -146,12 +146,30 @@ body .wrapper {
   margin: 15px 0 21px 0;
 }
 
-.checkbox {
+.checkbox-label {
   gap: 10px;
   background: none;
+  margin-right: 40px;
 }
-.chek {
-  margin-right: 60px;
+.checkbox-label input [type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  float: left;
+}
+
+.checkbox-label .checkbox {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+}
+
+.checkbox-label input [type="checkbox"]:checked + .checkbox {
+  background-image: url(images/Vector3.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .forgot-password {
