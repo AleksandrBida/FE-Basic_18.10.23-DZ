@@ -148,7 +148,6 @@ body .wrapper {
 
 .checkbox-label {
   gap: 10px;
-  background: none;
   margin-right: 40px;
 }
 .checkbox-label input [type="checkbox"] {
@@ -168,7 +167,7 @@ body .wrapper {
 
 .checkbox-label input [type="checkbox"]:checked + .checkbox {
   background-image: url(images/Vector3.png);
-  background-size: cover;
+  background-size: 25px;
   background-position: center;
 }
 
