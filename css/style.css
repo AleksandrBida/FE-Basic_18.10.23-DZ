@@ -28,28 +28,32 @@ body {
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 /*----------------------------------------- menu---------------------------------------*/
 
 .menu {
   display: block;
-  position: relative;
+  padding: 20px 40px;
   background-color: #333333;
 }
 
 .submenu:hover a {
-  display: block;
   padding: 10px 20px;
   text-decoration: none;
 }
-.nav .submenu:focus {
+.nav {
   display: block;
+  position: relative;
+}
+.submenu:focus {
+  display: block;
+  position: absolute;
   background-color: blue;
 }
-
 /*-------------------------- Показувати підменю при наведенні -----------------------*/
 
-.submenu:hover:hover > .menu {
+/* .submenu:hover:hover > .menu {
   display: block;
-}
+} */
