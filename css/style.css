@@ -45,6 +45,13 @@ li {
 .menu:hover {
   border-bottom: 5px solid blue;
 }
+.menu .item:hover {
+  background-color: blue;
+}
+.menu .item {
+  padding: 20px;
+  position: relative;
+}
 
 .submenu {
   border: 2px solid rgb(5, 5, 182);
@@ -55,23 +62,19 @@ li {
   border-top: 2px solid rgb(5, 5, 182);
 }
 
-.menu .item:hover {
-  background-color: blue;
-}
-
 .item:hover > .submenu {
   display: block;
 }
-.menu .item {
-  padding: 20px;
-  position: relative;
-}
+
 .submenu {
   display: none;
   position: absolute;
   left: 0;
   top: 108%;
   background-color: blue;
+}
+.submenu .item:hover {
+  background-color: aqua;
 }
 
 .submenu .submenu {
@@ -81,4 +84,17 @@ li {
 
 .submenu .item {
   min-width: 190px;
+}
+
+/* .menu:after {
+  content: "-";
+  display: inline-block;
+  color: #fff;
+  margin-left: 5px;
+} */
+
+.submenu:hover .item:after {
+  display: inline-block;
+  content: "+";
+  margin-left: 55px;
 }
