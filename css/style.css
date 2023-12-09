@@ -28,32 +28,57 @@ body {
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
 }
 
-/*----------------------------------------- menu---------------------------------------*/
+ul {
+  list-style: none;
+}
+li {
+  list-style: none;
+}
+/*------------------------------------- menu---------------------------------------*/
 
 .menu {
-  display: block;
-  padding: 20px 40px;
+  display: flex;
   background-color: #333333;
 }
+.menu:hover {
+  border-bottom: 5px solid blue;
+}
 
-.submenu:hover a {
-  padding: 10px 20px;
-  text-decoration: none;
+.submenu {
+  border: 2px solid rgb(5, 5, 182);
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
 }
-.nav {
-  display: block;
-  position: relative;
+.submenu > .item {
+  border-top: 2px solid rgb(5, 5, 182);
 }
-.submenu:focus {
-  display: block;
-  position: absolute;
+
+.menu .item:hover {
   background-color: blue;
 }
-/*-------------------------- Показувати підменю при наведенні -----------------------*/
 
-/* .submenu:hover:hover > .menu {
+.item:hover > .submenu {
   display: block;
-} */
+}
+.menu .item {
+  padding: 20px;
+  position: relative;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 108%;
+  background-color: blue;
+}
+
+.submenu .submenu {
+  top: 0;
+  left: 100%;
+}
+
+.submenu .item {
+  min-width: 190px;
+}
