@@ -86,15 +86,14 @@ li {
   min-width: 190px;
 }
 
-/* .menu:after {
-  content: "-";
+.plust:hover:after {
+  content: "+";
   display: inline-block;
   color: #fff;
   margin-left: 5px;
-} */
+}
 
-.submenu:hover .item:after {
-  display: inline-block;
+.submenu:hover .sub-plust:after {
   content: "+";
   margin-left: 55px;
 }
