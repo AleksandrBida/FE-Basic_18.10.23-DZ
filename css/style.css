@@ -74,7 +74,7 @@ li {
   background-color: blue;
 }
 .submenu .item:hover {
-  background-color: aqua;
+  background-color: rgb(6, 90, 226);
 }
 
 .submenu .submenu {
