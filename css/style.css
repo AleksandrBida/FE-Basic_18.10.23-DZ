@@ -36,20 +36,26 @@ ul {
 li {
   list-style: none;
 }
+.t-center {
+  text-align: center;
+}
 /*------------------------------------- menu---------------------------------------*/
 
 .menu {
   display: flex;
   background-color: #333333;
 }
-.menu:hover {
+.menu:hover .item {
+  display: block;
   border-bottom: 5px solid blue;
 }
 .menu .item:hover {
   background-color: blue;
 }
 .menu .item {
+  display: block;
   padding: 20px;
+  width: 125px;
   position: relative;
 }
 
@@ -58,7 +64,7 @@ li {
   border-top: 0;
   border-radius: 0 0 5px 5px;
 }
-.submenu > .item {
+.submenu .item {
   border-top: 2px solid rgb(5, 5, 182);
 }
 
@@ -70,7 +76,7 @@ li {
   display: none;
   position: absolute;
   left: 0;
-  top: 108%;
+  top: 107%;
   background-color: blue;
 }
 .submenu .item:hover {
@@ -88,12 +94,9 @@ li {
 
 .plust:hover:after {
   content: "+";
-  display: inline-block;
-  color: #fff;
-  margin-left: 5px;
+  margin-left: 4px;
 }
-
 .submenu:hover .sub-plust:after {
   content: "+";
-  margin-left: 55px;
+  margin-left: 50px;
 }
