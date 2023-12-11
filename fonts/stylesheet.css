@@ -1,27 +1,26 @@
 @font-face {
-    font-family: 'Bai Jamjuree';
-    src: url('BaiJamjuree-Bold.woff2') format('woff2'),
-        url('BaiJamjuree-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Graphik LCG";
+  src: url("GraphikLCG-Regular.woff2") format("woff2"),
+    url("GraphikLCG-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Bai Jamjuree';
-    src: url('BaiJamjuree-Medium.woff2') format('woff2'),
-        url('BaiJamjuree-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Graphik LCG";
+  src: url("GraphikLCG-Semibold.woff2") format("woff2"),
+    url("GraphikLCG-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Bai Jamjuree';
-    src: url('BaiJamjuree-Regular.woff2') format('woff2'),
-        url('BaiJamjuree-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Roboto";
+  src: url("Roboto-Regular.woff2") format("woff2"),
+    url("Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-
