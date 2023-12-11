@@ -91,13 +91,22 @@ li {
 
 .submenu .item {
   min-width: 190px;
+  white-space: nowrap;
 }
 
-.plust:hover:after {
+.sub-plust {
+  float: right;
+
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-between; */
+}
+/* .plust:hover:after {
   content: "+";
   margin-left: 4px;
-}
-.submenu:hover .sub-plust:after {
+} */
+/* .submenu:hover .sub-plust:after {
   content: "+";
-  margin-left: 50px;
-}
+  position: absolute;
+  right: 10px;
+} */
