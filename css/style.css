@@ -79,7 +79,19 @@ main {
   font-weight: 600;
   line-height: 2.8;
 }
-
+.text_b_20x30 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.text_b_20x30x600 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}
 .text_b_50x60 {
   font-size: 50px;
   font-style: normal;
@@ -103,7 +115,9 @@ main {
 img {
   max-width: 100%;
 }
-
+.a_blak {
+  color: #000;
+}
 .bg-orange {
   background-color: #ff9c7d;
 }
@@ -134,6 +148,9 @@ img {
 }
 .z-idex_1 {
   z-index: 1;
+}
+.a__none {
+  text-decoration: none;
 }
 /*-----------------header=----------------------------------*/
 .header {
@@ -210,6 +227,17 @@ img {
   text-align: center;
 }
 
+/*--------------------------------------blok3---------------------------------*/
+.wrapper3 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.wrap3 {
+  max-width: 493px;
+}
+.wrap3 p {
+  margin: 30px 0 30px 0;
+}
 /*-------------------------------footer------------------------------*/
 .bg_footer {
   background-color: #161513;
