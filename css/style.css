@@ -46,6 +46,12 @@ main {
   font-weight: 400;
   line-height: 1.33;
 }
+.text_b_15x25 {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.66;
+}
 .text_w_16x45 {
   color: #fff;
   font-size: 16px;
@@ -53,12 +59,32 @@ main {
   font-weight: 600;
   line-height: 2.8;
 }
+.text_b_16x60 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.75;
+}
 
+.text_w_16x60 {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.75;
+}
 .text_b_16x45 {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 2.8;
+}
+
+.text_b_50x60 {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
 }
 .text_b_65x70 {
   font-size: 65px;
@@ -87,36 +113,103 @@ img {
 .t-center {
   text-align: center;
 }
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-center {
+  justify-content: center;
+}
+.a-i-center {
+  align-items: center;
+}
+.f-d-column {
+  flex-direction: column;
+}
+.z-idex_1 {
+  z-index: 1;
+}
 /*-----------------header=----------------------------------*/
 .header {
   background-color: var(--primary-color);
   padding: 31px 0 24px;
   border-bottom: 2px solid rgb(186, 186, 186);
+  flex-wrap: nowrap;
 }
-.flex-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 .logo {
-  display: flex;
-  align-items: center;
+  margin-right: 51px;
 }
 .nav-link + .nav-link {
-  margin-left: 32px;
+  margin-left: 50px;
 }
 
 .nav a {
   text-decoration: none;
   color: var(--text-color);
 }
-
-.talk1 {
-  padding: 9px 26px 9px 26px;
-  cursor: pointer;
+.nav {
+  flex-grow: 1;
 }
-/*------------------------main-screen----------------------*/
-.
+.header .btn {
+  min-width: 120px;
+
+  cursor: pointer;
+  border: 1px solid #000;
+}
+/*------------------------blok1----------------------*/
+.wrapper1 {
+  margin-top: 97px;
+  margin-bottom: 77px;
+  position: relative;
+}
+
+.title .btn {
+  min-width: 160px;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.title {
+  max-width: 620px;
+  flex-direction: column;
+}
+.title .descripion {
+  max-width: 471px;
+  padding-top: 51px;
+  padding-bottom: 50px;
+}
+.title .text {
+  margin-top: 24px;
+  margin-bottom: 35px;
+}
+.image {
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+/*-----------------------------blok2--------------------------------------*/
+.blok2 {
+  background-color: #ff9c7d;
+}
+.wrapper2 {
+  align-self: center;
+  gap: 70px;
+  padding-top: 98px;
+  padding-bottom: 94px;
+}
+.wrapper2 h2 {
+  justify-content: center;
+  max-width: 720px;
+  text-align: center;
+}
+
 /*-------------------------------footer------------------------------*/
 .bg_footer {
   background-color: #161513;
