@@ -106,6 +106,12 @@ main {
   font-weight: 600;
   line-height: 1.33;
 }
+.text_b_30x40 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+}
 .text_b_25x35x600 {
   font-size: 25px;
   font-style: normal;
@@ -117,6 +123,12 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 1.2;
+}
+.text_b_35x50 {
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.42;
 }
 .text_b_65x70 {
   font-size: 65px;
@@ -319,6 +331,62 @@ img {
   max-width: 179px;
   margin-top: 59px;
   margin-bottom: 58px;
+}
+
+/*-------------------------------blok6-------------------------------*/
+.blok6 {
+  background-color: #c9e8f2;
+}
+.wrapper6 {
+  padding-bottom: 25px;
+}
+.descripion6 {
+  margin-top: 63px;
+  margin-bottom: 23px;
+}
+.text6 {
+  margin-bottom: 5px;
+}
+.foto {
+  margin-right: 20px;
+  margin-top: 53px;
+  margin-bottom: 80px;
+  margin-left: 60px;
+}
+/*-------------------------------blok7-------------------------------*/
+.blok7 {
+  background-color: #dabc98;
+  position: relative;
+}
+.wrapper7 .descripion {
+  margin-left: 100px;
+  justify-content: flex-end;
+}
+.cake {
+  position: absolute;
+  top: 70px;
+  left: 70px;
+}
+.wrap7 {
+  border-left: 2px solid #000;
+  margin-top: 79px;
+  margin-bottom: 80px;
+}
+.square1 {
+  padding-right: 70px;
+  padding-left: 71px;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+.square2 {
+  padding-right: 62px;
+  padding-top: 30px;
+  padding-bottom: 22px;
+}
+
+.star {
+  margin-top: 20px;
+  margin-bottom: 14px;
 }
 /*-------------------------------footer------------------------------*/
 .bg_footer {
