@@ -79,6 +79,13 @@ main {
   font-weight: 600;
   line-height: 2.8;
 }
+.text_w_17x60x600 {
+  color: #fff;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.53;
+}
 
 .text_b_18x25 {
   font-size: 18px;
@@ -136,12 +143,30 @@ main {
   font-weight: 600;
   line-height: 1.07;
 }
-
+.text_b_65x75 {
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.15;
+}
 .text_b_25x35 {
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
+}
+.text_b_25x30 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.text_w_16x60x600 {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3.75;
 }
 
 img {
@@ -168,7 +193,9 @@ img {
 .justify-around {
   justify-content: space-around;
 }
-
+.justify-end {
+  justify-content: flex-end;
+}
 .justify-center {
   justify-content: center;
 }
@@ -359,12 +386,16 @@ img {
   position: relative;
 }
 .wrapper7 .descripion {
-  margin-left: 100px;
-  justify-content: flex-end;
+  max-width: 461px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.wrapper7 {
+  margin-bottom: 89px;
 }
 .cake {
   position: absolute;
-  top: 70px;
+  top: 75px;
   left: 70px;
 }
 .wrap7 {
@@ -387,6 +418,49 @@ img {
 .star {
   margin-top: 20px;
   margin-bottom: 14px;
+}
+
+/*----------------------------------blok8-----------------------------*/
+
+.wrapper8 h2 {
+  max-width: 791px;
+  margin-top: 80px;
+}
+.wrapper8 p {
+  max-width: 539px;
+  margin-bottom: 25px;
+}
+.wrapper8 img {
+  margin-bottom: 32px;
+}
+.wrapper8 .btn {
+  min-width: 193px;
+  cursor: pointer;
+  margin-bottom: 82px;
+}
+
+/*----------------------------------blok9-----------------------------*/
+.blok9 {
+  background-color: #ff9c7d;
+}
+
+.wrap9 h2 {
+  max-width: 784px;
+  padding-top: 100px;
+}
+.wrap9 p {
+  margin-top: 29px;
+  margin-bottom: 54px;
+}
+.wrap9 .btn {
+  min-width: 160px;
+  cursor: pointer;
+  background-color: #000;
+  margin-bottom: 80px;
+}
+.wrap9 {
+  padding-top: 19px;
+  padding-bottom: 80px;
 }
 /*-------------------------------footer------------------------------*/
 .bg_footer {
