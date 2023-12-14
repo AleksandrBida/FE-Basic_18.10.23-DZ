@@ -112,6 +112,13 @@ main {
   font-weight: 600;
   line-height: 1.5;
 }
+
+.text_20x25x600 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25;
+}
 .text_b_40x50x600 {
   font-size: 40px;
   font-style: normal;
