@@ -79,6 +79,13 @@ main {
   font-weight: 600;
   line-height: 2.8;
 }
+
+.text_b_18x25 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.38;
+}
 .text_b_20x30 {
   font-size: 20px;
   font-style: normal;
@@ -91,6 +98,19 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: 1.5;
+}
+
+.text_b_30x40x600 {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.33;
+}
+.text_b_25x35x600 {
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4;
 }
 .text_b_50x60 {
   font-size: 50px;
@@ -146,11 +166,18 @@ img {
 .f-d-column {
   flex-direction: column;
 }
+.f-w-wrap {
+  flex-wrap: wrap;
+}
 .z-idex_1 {
   z-index: 1;
 }
 .a__none {
   text-decoration: none;
+}
+.a-d-line {
+  color: #000;
+  text-decoration-line: underline;
 }
 /*-----------------header=----------------------------------*/
 .header {
@@ -237,6 +264,61 @@ img {
 }
 .wrap3 p {
   margin: 30px 0 30px 0;
+}
+
+/*=-------------------------------------blok4-----------------------------*/
+.blok4 {
+  background: #fff8e4;
+}
+.wrapper4 {
+  padding-top: 60px;
+  padding-bottom: 93px;
+}
+.card {
+  max-width: 330px;
+  margin-bottom: 57px;
+  margin-top: 58px;
+}
+.card h5 {
+  padding: 23px 0 23px;
+}
+.games {
+  max-width: 320px;
+}
+
+/*-------------------------------blok5-------------------------------*/
+.wrapper5 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding-top: 54px;
+}
+.card1 {
+  max-width: 440px;
+  margin-bottom: 20px;
+}
+.card1 p {
+  max-width: 406px;
+  margin-top: 34px;
+  margin-bottom: 25px;
+}
+.wrap5 {
+  margin-top: 25px;
+}
+.card1 .image1 {
+  max-width: 145px;
+  margin-top: 50px;
+  margin-bottom: 49px;
+}
+.card1 .image2 {
+  max-width: 179px;
+  margin-top: 67px;
+  margin-bottom: 67px;
+}
+
+.card1 .image3 {
+  max-width: 179px;
+  margin-top: 59px;
+  margin-bottom: 58px;
 }
 /*-------------------------------footer------------------------------*/
 .bg_footer {
