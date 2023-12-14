@@ -40,6 +40,12 @@ main {
   max-width: calc(var(--container-small-width) + var(--basic-space) * 2);
 }
 
+.text_b_12x15 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25;
+}
 .text_b_15x20 {
   font-size: 15px;
   font-style: normal;
@@ -495,4 +501,14 @@ img {
 .wrapper_footer {
   border-bottom: 2px solid #000;
   margin-bottom: 48px;
+}
+.button_path {
+  padding-bottom: 43px;
+}
+.button_path .descripion {
+  max-width: 301px;
+  margin-left: 14px;
+}
+.button_path .text {
+  flex-grow: 1;
 }
