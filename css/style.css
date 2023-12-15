@@ -261,9 +261,8 @@ img {
 }
 .header .btn {
   min-width: 120px;
-
   cursor: pointer;
-  border: 1px solid #000;
+  border: 0px solid #000;
 }
 /*------------------------blok1----------------------*/
 .wrapper1 {
@@ -275,7 +274,7 @@ img {
 .title .btn {
   min-width: 160px;
 
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 0px solid #000;
 }
 .title {
   max-width: 620px;
@@ -454,6 +453,7 @@ img {
   min-width: 193px;
   cursor: pointer;
   margin-bottom: 82px;
+  border: 0px solid #000;
 }
 
 /*----------------------------------blok9-----------------------------*/
@@ -474,6 +474,7 @@ img {
   cursor: pointer;
   background-color: #000;
   margin-bottom: 80px;
+  border: 0px solid #000;
 }
 .wrap9 {
   padding-top: 19px;
