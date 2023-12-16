@@ -304,7 +304,7 @@ img {
   min-width: 160px;
 }
 .title {
-  max-width: 620px;
+  min-width: 539px;
   flex-direction: column;
 }
 .title .descripion {
@@ -316,11 +316,11 @@ img {
   margin-top: 24px;
   margin-bottom: 35px;
 }
-.image {
+/* .image {
   position: absolute;
   right: 0;
-  top: 0px;
-}
+  top: 0;
+} */
 
 /*-----------------------------blok2--------------------------------------*/
 .blok2 {
