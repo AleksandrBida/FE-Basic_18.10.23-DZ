@@ -349,10 +349,10 @@ img {
   margin: 30px 0 30px 0;
 }
 
-/* .img4 {
-  aspect-ratio: 632/577;
+.img4 {
+  aspect-ratio: 1.35;
   object-fit: contain;
-} */
+}
 /*=-------------------------------------blok4-----------------------------*/
 .blok4 {
   background: #fff8e4;
