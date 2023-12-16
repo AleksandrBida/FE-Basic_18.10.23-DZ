@@ -304,7 +304,7 @@ img {
   min-width: 160px;
 }
 .title {
-  min-width: 539px;
+  max-width: 539px;
   flex-direction: column;
 }
 .title .descripion {
