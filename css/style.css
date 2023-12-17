@@ -129,8 +129,8 @@ main {
   text-decoration: none;
 }
 
-.border_1_ {
-  border: 1px solid #000;
+.grid {
+  display: grid;
 }
 .color-active {
   color: #24a3ff;
