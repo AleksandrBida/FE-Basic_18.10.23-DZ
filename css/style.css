@@ -38,7 +38,7 @@ main {
 }
 
 .container.small {
-  max-width: calc(var(--container-small-width) + var(--basic-space) * 2);
+  /* max-width: calc(var(--container-small-width) + var(--basic-space) * 2); */
 }
 .text-12x700 {
   font-size: 12px;
@@ -141,7 +141,9 @@ main {
 .color-text {
   color: #b3b3ba;
 }
-
+.bg {
+  background-color: blueviolet;
+}
 /*-----------------header=----------------------------------*/
 .header {
   background-color: #fff;
@@ -162,8 +164,11 @@ main {
 }
 .nav {
   color: var(--Active-Regular, #24a3ff);
+  margin-top: 16px;
 }
-
+.language {
+  margin: 0 14px 0 14px;
+}
 /*-------------------------------title-------------------------*/
 .title {
   max-width: 1360px;
@@ -184,9 +189,22 @@ main {
   -webkit-text-fill-color: transparent;
 }
 /*------------------------blok1----------------------*/
+.wrapper {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  margin-bottom: 60px;
+}
+.wrapper h5 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+.card {
+}
 
 /*-------------------------------footer------------------------------*/
 .footer {
+}
+.f-bg {
   background-color: #f5f5fa;
 }
 .map {
@@ -204,3 +222,4 @@ main {
 .tel {
   color: #46466e;
 }
+/*--------------------------------primer--------------------------------------*/
