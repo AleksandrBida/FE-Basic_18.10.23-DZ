@@ -23,7 +23,15 @@ html {
 }
 body {
   min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
+
+img {
+  max-width: 100%;
+  /* object-fit: cover; */
+}
+
 main {
   /* background-color: var(--primary-color); */
 }
@@ -79,9 +87,6 @@ main {
   line-height: normal;
 }
 
-.img {
-  max-width: 100%;
-}
 .a_blak {
   color: #000;
 }
@@ -198,7 +203,8 @@ main {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-.card {
+.card img {
+  /* max-width: 100%; */
 }
 
 /*-------------------------------footer------------------------------*/
