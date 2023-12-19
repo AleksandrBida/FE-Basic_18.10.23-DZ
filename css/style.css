@@ -149,6 +149,9 @@ main {
 .bg {
   background-color: blueviolet;
 }
+.Main-Alt {
+  color: #46466e;
+}
 /*-----------------header=----------------------------------*/
 .header {
   background-color: #fff;
@@ -156,11 +159,18 @@ main {
   margin-bottom: 6px;
 }
 
+.Facebook-Header svg:hover path {
+  fill: #f0145a;
+}
 .team {
   color: var(--Main-Regular, #323264);
 }
 .nav-link + .nav-link {
   margin-left: 15px;
+}
+.nav .nav-link:hover {
+  text-decoration: underline;
+  color: #f0145a;
 }
 
 .nav a {
@@ -206,7 +216,13 @@ main {
   border-radius: 12px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
-.card .grid {
+.card:hover h5 {
+  color: #f0145a;
+}
+.card:hover svg path {
+  stroke: #f0145a;
+}
+.card.grid {
   grid-template-areas:
     "a a"
     "a a"
@@ -226,11 +242,16 @@ main {
 .grid .element4 {
   grid-area: d;
 }
+
 /*-------------------------------footer------------------------------*/
 .footer {
+  margin-bottom: 100px;
 }
 .f-bg {
   background-color: #f5f5fa;
+}
+.map a:hover {
+  color: #f0145a;
 }
 .map {
   margin-bottom: 21px;
@@ -245,18 +266,14 @@ main {
 .navigation {
 }
 
-.tel {
-  color: #46466e;
-}
-/*--------------------------------primer--------------------------------------*/
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
+.tel:hover {
+  color: #08680a;
 }
 
-.grid-item {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: center;
+.social-face svg:hover path {
+  fill: #f0145a;
 }
+.contact:hover {
+  color: #f0145a;
+}
+/*--------------------------------------------------------------------------------*/
