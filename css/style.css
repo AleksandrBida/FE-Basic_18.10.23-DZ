@@ -206,7 +206,25 @@ main {
   border-radius: 12px;
   background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
-.card {
+.card .grid {
+  grid-template-areas:
+    "a a"
+    "a a"
+    "b d"
+    "c";
+}
+
+.grid .element1 {
+  grid-area: a;
+}
+.grid .element2 {
+  grid-area: b;
+}
+.grid .element3 {
+  grid-area: c;
+}
+.grid .element4 {
+  grid-area: d;
 }
 /*-------------------------------footer------------------------------*/
 .footer {
@@ -231,3 +249,14 @@ main {
   color: #46466e;
 }
 /*--------------------------------primer--------------------------------------*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
