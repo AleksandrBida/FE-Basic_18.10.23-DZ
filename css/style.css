@@ -1,6 +1,6 @@
 :root {
   --container-width: 1600px;
-  /* --container-small-width: 1290px; */
+  --container-small-width: 1360px;
   --basic-space: 1rem;
   --Active-Regular: #24a3ff;
   --Main-Regular: #323264;
@@ -29,7 +29,7 @@ body {
 
 img {
   max-width: 100%;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 main {
@@ -46,7 +46,7 @@ main {
 }
 
 .container.small {
-  /* max-width: calc(var(--container-small-width) + var(--basic-space) * 2); */
+  max-width: calc(var(--container-small-width) + var(--basic-space) * 2);
 }
 .text-12x700 {
   font-size: 12px;
@@ -176,7 +176,6 @@ main {
 }
 /*-------------------------------title-------------------------*/
 .title {
-  max-width: 1360px;
   margin: 60px auto 60px auto;
   background: var(
     --Gradient-Red-Text,
@@ -203,10 +202,12 @@ main {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-.card img {
-  /* max-width: 100%; */
+.foto {
+  border-radius: 12px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
 }
-
+.card {
+}
 /*-------------------------------footer------------------------------*/
 .footer {
 }
