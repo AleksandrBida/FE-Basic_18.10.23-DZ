@@ -201,17 +201,15 @@ input[type="radio"] {
   display: none;
 }
 .language-label .radio {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 7px 9px;
   align-items: center;
   border: 0px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
-
   color: #b3b3ba;
 }
 .language-label:active .radio {
-  display: inline-block;
   background-color: #f00;
   border-radius: 9px;
 }
@@ -219,11 +217,8 @@ input[type="radio"] {
   color: #fff;
 }
 .language-label input[type="radio"]:checked + .radio {
-  display: inline-block;
   background-color: #f5f5fa;
   color: #b3b3ba;
-  padding: 7px 9px;
-  border-radius: 8px;
 }
 /* 
 
