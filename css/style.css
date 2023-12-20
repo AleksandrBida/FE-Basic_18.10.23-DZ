@@ -120,6 +120,9 @@ main {
 .f-d-column {
   flex-direction: column;
 }
+.f-d-row {
+  flex-direction: row;
+}
 .f-w-wrap {
   flex-wrap: wrap;
 }
@@ -158,13 +161,26 @@ main {
   margin-top: 50px;
   margin-bottom: 6px;
 }
+.wrap.grid {
+  grid-template-areas:
+    "a b"
+    "a c";
+}
+
+.grid.item1 {
+  grid-area: a;
+}
+.grid.item2 {
+  grid-area: b;
+}
+.grid.item3 {
+  grid-area: c;
+}
 
 .Facebook-Header svg:hover path {
   fill: #f0145a;
 }
-.team {
-  color: var(--Main-Regular, #323264);
-}
+
 .nav-link + .nav-link {
   margin-left: 15px;
 }
@@ -181,33 +197,25 @@ main {
   color: var(--Active-Regular, #24a3ff);
   margin-top: 16px;
 }
-
-.language label {
-  cursor: pointer;
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.language input[type="radio"] + label svg {
-  fill: #b3b3ba;
-  transition: fill 0.3s ease;
-}
-
-.language input[type="radio"]:checked + label svg {
-  fill: #f0145a;
-}
-
-.language input[type="radio"]:checked + label {
-  background-color: #08680a;
-  border-color: #24a3ff;
-}
-
 input[type="radio"] {
   display: none;
 }
-
+.language-label {
+  padding: 5px 7px;
+  align-items: center;
+  border: 0px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.language-label:active svg path {
+  fill: #fff;
+}
+.language-label:active {
+  background-color: #f00;
+}
+.language-label input:checked {
+  background-color: #007;
+}
 /*-------------------------------title-------------------------*/
 .title {
   margin: 60px auto 60px auto;
