@@ -207,20 +207,20 @@ input[type="radio"] {
   border-radius: 8px;
   cursor: pointer;
   gap: 6px;
+  color: #b3b3ba;
 }
 
-.language-label:active svg path {
-  fill: #fff;
+.language-label:active {
+  color: #fff;
 }
 .language-label:active {
   background-color: #f00;
 }
-.language-label input[type="radio"]:checked + svg path {
-  fill: #007bff;
+.language-label input[type="radio"]:checked {
+  background-color: #007bff;
 }
 /* .language-label input[type="radio"]:checked + svg {
   background-color: #007bff;
- 
 } */
 
 /*-------------------------------title-------------------------*/
@@ -310,7 +310,7 @@ input[type="radio"] {
 }
 
 .tel:hover {
-  color: #08680a;
+  color: #767676;
 }
 
 .social-face svg:hover path {
@@ -320,3 +320,5 @@ input[type="radio"] {
   color: #f0145a;
 }
 /*--------------------------------------------------------------------------------*/
+@media screen {
+}
