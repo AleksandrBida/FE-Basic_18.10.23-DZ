@@ -213,8 +213,11 @@ input[type="radio"] {
 .language-label:active {
   background-color: #f00;
 }
-.language-label input:checked {
-  background-color: #007;
+.language-label input[type="radio"]:checked + svg path {
+  fill: #fff;
+}
+.language-label input[type="radio"]:checked {
+  background-color: #007bff;
 }
 /*-------------------------------title-------------------------*/
 .title {
