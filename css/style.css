@@ -206,7 +206,9 @@ input[type="radio"] {
   border: 0px solid #ccc;
   border-radius: 8px;
   cursor: pointer;
+  gap: 6px;
 }
+
 .language-label:active svg path {
   fill: #fff;
 }
@@ -214,11 +216,13 @@ input[type="radio"] {
   background-color: #f00;
 }
 .language-label input[type="radio"]:checked + svg path {
-  fill: #fff;
+  fill: #007bff;
 }
-.language-label input[type="radio"]:checked {
+/* .language-label input[type="radio"]:checked + svg {
   background-color: #007bff;
-}
+ 
+} */
+
 /*-------------------------------title-------------------------*/
 .title {
   margin: 60px auto 60px auto;
