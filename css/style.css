@@ -201,7 +201,7 @@ input[type="radio"] {
   display: none;
 }
 .language-label .radio {
-  /* display: inline-block; */
+  display: inline-block;
   padding: 7px 9px;
   align-items: center;
   border: 0px solid #ccc;
@@ -209,23 +209,24 @@ input[type="radio"] {
   cursor: pointer;
   color: #b3b3ba;
 }
-.language-label:active .radio {
+.language-label:hover .radio {
+  /* background-color: rgb(0, 102, 255); */
+}
+
+.language-label:hover .radio {
+  color: #fff;
   background-color: #f00;
-  border-radius: 9px;
+}
+/* .language-label:active .radio {
+ 
 }
 .language-label:active .radio {
   color: #fff;
-}
-.language-label input[type="radio"]:checked + .radio {
+} */
+.language-label input:checked + .radio {
   background-color: #f5f5fa;
   color: #b3b3ba;
 }
-/* 
-
-
-.language-label input[type="radio"]:checked + svg {
-  background-color: #007bff;
-} */
 
 /*-------------------------------title-------------------------*/
 .title {
@@ -257,7 +258,7 @@ input[type="radio"] {
 }
 .foto {
   border-radius: 12px;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  /* background: url(<path-to-image>), lightgray 50% / cover no-repeat; */
 }
 .card:hover h5 {
   color: #f0145a;
@@ -323,6 +324,46 @@ input[type="radio"] {
 .contact:hover {
   color: #f0145a;
 }
-/*--------------------------------------------------------------------------------*/
-@media screen {
+/*--------------------------------adaptiv------------------------------------------------*/
+@media screen and (max-width: 1320px) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 648px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 827px) {
+  .wrap.grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "b" "a" "c";
+  }
+
+  .grid.item1 {
+    grid-area: a;
+    margin: 30px 0;
+  }
+  .grid.item2 {
+    grid-area: b;
+  }
+  .grid.item3 {
+    grid-area: c;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 25px;
+  }
 }
