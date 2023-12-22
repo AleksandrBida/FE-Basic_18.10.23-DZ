@@ -96,6 +96,10 @@ main {
 .t-center {
   text-align: center;
 }
+.t-right {
+  text-align: right;
+}
+
 .flex {
   display: flex;
 }
@@ -346,24 +350,58 @@ input[type="radio"] {
   }
 }
 
-@media screen and (max-width: 827px) {
-  .wrap.grid .col2 {
-    grid-template-columns: repeat(3, 1fr);
+@media screen and (max-width: 709px) {
+  .wrap.grid {
     grid-template-areas: "b" "a" "c";
   }
+  .nav {
+    justify-content: flex-start;
+  }
 
-  .item1 {
+  .grid .item1 {
     grid-area: a;
     margin: 30px 0;
   }
-  .col2 .item2 {
+  .grid .item2 {
     grid-area: b;
   }
-  .col2 .item3 {
+  .grid .item3 {
     grid-area: c;
   }
   .contact {
     flex-direction: column;
     gap: 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .item2 .krapka {
+    display: none;
+  }
+  .item2 .Facebook-Header {
+    display: none;
+  }
+  .item2 p {
+    display: none;
+  }
+  .item2 {
+    justify-content: space-between;
+  }
+  .navigation .krapka {
+    display: none;
+  }
+  .sochial {
+    flex-direction: column;
+  }
+  .map {
+    flex-direction: column;
+  }
+  .map a {
+    margin-top: 10px;
+  }
+  .sochial .tel {
+    margin: 10px 0 10px;
+  }
+  .llc {
+    text-align: center;
   }
 }
