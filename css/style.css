@@ -167,13 +167,13 @@ main {
     "a c";
 }
 
-.grid.item1 {
+.grid .item1 {
   grid-area: a;
 }
-.grid.item2 {
+.grid .item2 {
   grid-area: b;
 }
-.grid.item3 {
+.grid .item3 {
   grid-area: c;
 }
 
@@ -347,19 +347,19 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 827px) {
-  .wrap.grid {
+  .wrap.grid .col2 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "b" "a" "c";
   }
 
-  .grid.item1 {
+  .item1 {
     grid-area: a;
     margin: 30px 0;
   }
-  .grid.item2 {
+  .col2 .item2 {
     grid-area: b;
   }
-  .grid.item3 {
+  .col2 .item3 {
     grid-area: c;
   }
   .contact {
