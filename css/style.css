@@ -165,6 +165,24 @@ main {
 .Main-Alt {
   color: #46466e;
 }
+/*------------------------крапка в ручну---------------------*/
+
+/* (<span class="dot" > </span >) */
+
+.dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #b3b3ba;
+  align-items: center;
+}
+
+/*-------------------------------burger------------------*/
+.burger {
+  display: none;
+}
+
 /*-----------------header=----------------------------------*/
 .header {
   background-color: #fff;
@@ -194,8 +212,12 @@ main {
 .nav-link + .nav-link {
   margin-left: 15px;
 }
-.nav .nav-link:hover {
-  text-decoration: underline;
+.nav-link:hover {
+  text-decoration: underline #24a3ff;
+  color: ;
+}
+.nav-link:active {
+  text-decoration: underline #f0145a;
   color: #f0145a;
 }
 
@@ -225,7 +247,7 @@ input[type="radio"] {
 
 .language-label:hover .radio {
   color: #fff;
-  background-color: #f00;
+  background-color: #b3b3ba;
 }
 /* .language-label:active .radio {
  
@@ -234,8 +256,8 @@ input[type="radio"] {
   color: #fff;
 } */
 .language-label input:checked + .radio {
-  background-color: #f5f5fa;
-  color: #b3b3ba;
+  background-color: #f00;
+  color: #f5f5fa;
 }
 
 /*-------------------------------title-------------------------*/
@@ -258,6 +280,7 @@ input[type="radio"] {
 }
 /*------------------------blok1----------------------*/
 .wrapper {
+  flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
   gap: 60px;
   margin-bottom: 60px;
@@ -337,33 +360,25 @@ input[type="radio"] {
   color: #f0145a;
 }
 /*--------------------------------adaptiv------------------------------------------------*/
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1320px) {
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
     gap: 60px;
   }
-}
-@media screen and (max-width: 992px) {
-  .wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    padding: 0 60px 0 60px;
-    gap: 60px;
-    margin-bottom: 60px;
+  .foto {
+    align-self: stretch;
   }
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1072px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
-    gap: 60px;
     padding: 0 60px 0 60px;
+    gap: 60px;
     margin-bottom: 60px;
   }
+
   .wrap.grid {
     grid-template-areas: "b" "a" "c";
-  }
-  .nav {
-    justify-content: flex-start;
   }
 
   .grid .item1 {
@@ -375,21 +390,66 @@ input[type="radio"] {
   }
   .grid .item3 {
     grid-area: c;
+    justify-content: flex-start;
   }
+
+  .foto {
+    height: 400px;
+    align-self: stretch;
+  }
+  .title {
+    max-width: 664px;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    padding: 0 60px 0 60px;
+    margin-bottom: 60px;
+  }
+  .foto {
+    height: 400px;
+    align-self: stretch;
+  }
+  .nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
   .contact {
     flex-direction: column;
     gap: 25px;
   }
-}
-@media screen and (max-width: 576px) {
-  .wrapper {
-    grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 0 30px 0 30px;
-    margin-bottom: 30px;
+  .burger {
+    display: inline-block;
+    cursor: pointer;
   }
-  .title {
-    font-size: 30px;
+  .burger svg rect {
+    fill: transparent;
+  }
+  .burger:active svg rect {
+    fill: #e6e6f0;
+  }
+  .nav {
+    display: none;
+  }
+
+  .wrap.grid {
+    grid-template-areas:
+      "b b"
+      "a c";
+  }
+
+  .grid .item1 {
+    grid-area: a;
+  }
+  .grid .item2 {
+    grid-area: b;
+  }
+  .grid .item3 {
+    grid-area: c;
   }
   .item2 .krapka {
     display: none;
@@ -403,6 +463,24 @@ input[type="radio"] {
   .item2 {
     justify-content: space-between;
   }
+}
+@media screen and (max-width: 573px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 0 30px 0 30px;
+    margin-bottom: 30px;
+  }
+  .title {
+    margin-right: auto;
+    max-width: 315px;
+    font-size: 30px;
+  }
+  .foto {
+    height: 300px;
+    align-self: stretch;
+  }
+
   .navigation .krapka {
     display: none;
   }
