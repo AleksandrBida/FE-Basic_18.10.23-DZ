@@ -214,7 +214,6 @@ main {
 }
 .nav-link:hover {
   text-decoration: underline #24a3ff;
-  color: ;
 }
 .nav-link:active {
   text-decoration: underline #f0145a;
@@ -368,6 +367,9 @@ input[type="radio"] {
   .foto {
     align-self: stretch;
   }
+  .cloze {
+    display: none;
+  }
 }
 @media screen and (max-width: 1072px) {
   .wrapper {
@@ -413,9 +415,17 @@ input[type="radio"] {
     height: 400px;
     align-self: stretch;
   }
+  .item3 {
+    position: relative;
+  }
+
   .burger {
-    display: inline-block;
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    display: flex;
     cursor: pointer;
+    z-index: 5;
   }
   .burger svg rect {
     fill: transparent;
@@ -423,14 +433,49 @@ input[type="radio"] {
   .burger.active svg rect {
     fill: #e6e6f0;
   }
+
   .nav {
     display: none;
-  }
-  .nav {
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    background-color: #fff;
+    z-index: 2;
+    max-width: 359px;
+    padding: 12px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border-radius: 12px 12px 12px 12px;
   }
 
+  .nav.active {
+    display: flex;
+  }
+  .cloze {
+    display: flex;
+    margin-left: auto;
+    border-radius: 12px 12px 12px 12px;
+    justify-content: flex-end;
+
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  .nav-link + .nav-link {
+    margin-left: 0px;
+  }
+  .nav-link {
+    min-width: 335px;
+    border-radius: 12px;
+    background-color: #f5f5fa;
+    padding: 7px 0 7px;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
   .contact {
     flex-direction: column;
     gap: 25px;

@@ -1,3 +1,6 @@
 $('.burger').click(function () {
-    $(this).toggleclass('active');
+    $(this).toggleClass('active');
+    $('.nav').toggleClass('active');
+
 })
+
