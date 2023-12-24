@@ -182,7 +182,9 @@ main {
 .burger {
   display: none;
 }
-
+.cloze {
+  display: none;
+}
 /*-----------------header=----------------------------------*/
 .header {
   background-color: #fff;
@@ -366,9 +368,6 @@ input[type="radio"] {
   }
   .foto {
     align-self: stretch;
-  }
-  .cloze {
-    display: none;
   }
 }
 @media screen and (max-width: 1072px) {
