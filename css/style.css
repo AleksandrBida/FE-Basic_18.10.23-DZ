@@ -413,6 +413,19 @@ input[type="radio"] {
     height: 400px;
     align-self: stretch;
   }
+  .burger {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .burger svg rect {
+    fill: transparent;
+  }
+  .burger.active svg rect {
+    fill: #e6e6f0;
+  }
+  .nav {
+    display: none;
+  }
   .nav {
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -421,19 +434,6 @@ input[type="radio"] {
   .contact {
     flex-direction: column;
     gap: 25px;
-  }
-  .burger {
-    display: inline-block;
-    cursor: pointer;
-  }
-  .burger svg rect {
-    fill: transparent;
-  }
-  .burger:active svg rect {
-    fill: #e6e6f0;
-  }
-  .nav {
-    display: none;
   }
 
   .wrap.grid {
