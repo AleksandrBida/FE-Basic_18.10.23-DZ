@@ -4,3 +4,7 @@ $('.burger').click(function () {
 
 })
 
+$('.close').click(function () {
+    $('.nav').removeClass('active');
+
+}) 

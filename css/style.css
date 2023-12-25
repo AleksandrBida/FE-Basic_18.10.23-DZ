@@ -182,7 +182,7 @@ main {
 .burger {
   display: none;
 }
-.cloze {
+.close {
   display: none;
 }
 /*-----------------header=----------------------------------*/
@@ -452,12 +452,11 @@ input[type="radio"] {
   .nav.active {
     display: flex;
   }
-  .cloze {
+  .close {
     display: flex;
     margin-left: auto;
     border-radius: 12px 12px 12px 12px;
     justify-content: flex-end;
-
     cursor: pointer;
     margin-bottom: 5px;
   }
