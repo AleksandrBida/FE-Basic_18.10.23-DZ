@@ -6,5 +6,5 @@ $('.burger').click(function () {
 
 $('.close').click(function () {
     $('.nav').removeClass('active');
-    $('.bg-menu').toggleClassClass('active');
+    // $('.bg-menu').toggleClassClass('active');
 }) 
