@@ -448,7 +448,10 @@ input[type="radio"] {
     right: 10px;
     border-radius: 12px 12px 12px 12px;
   }
-
+  .bg-menu {
+    display: flex;
+    background-color: #323264;
+  }
   .nav.active {
     display: flex;
   }
