@@ -478,6 +478,9 @@ input[type="radio"] {
     max-width: 335px;
     border-radius: 12px;
   }
+  .close:hover svg path {
+    stroke: #ec6f5d;
+  }
 
   .nav-link + .nav-link {
     margin-left: 0px;
