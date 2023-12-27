@@ -446,9 +446,10 @@ input[type="radio"] {
     padding: 12px;
     flex-direction: column;
     align-items: center;
+    justify-content: start;
+    padding-top: 50px;
     gap: 20px;
-    justify-content: center;
-    right: 10px;
+
     border-radius: 12px 12px 12px 12px;
   }
   .bg-menu.active {
@@ -470,30 +471,42 @@ input[type="radio"] {
   }
   .close {
     display: flex;
-    margin-left: auto;
-    border-radius: 12px 12px 12px 12px;
     justify-content: flex-end;
+    border-radius: 12px 12px 12px 12px;
     cursor: pointer;
-    margin-bottom: 5px;
+    width: 100%;
+    max-width: 335px;
+    border-radius: 12px;
   }
 
   .nav-link + .nav-link {
     margin-left: 0px;
+    padding: 7px 0 7px 0;
   }
   .nav-link {
-    min-width: 315px;
+    width: 100%;
+    max-width: 335px;
     border-radius: 12px;
     background-color: #f5f5fa;
-    padding: 7px 0 7px;
+    padding: 7px 0 7px 0;
     text-align: center;
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
   }
+
+  .bor-bot {
+    border-bottom: 0px;
+    padding-bottom: 0px;
+  }
+
   .nav-link:hover {
     text-decoration: none;
     background-color: #bfbfc8;
+    border-bottom: 0px;
+    padding-bottom: 0px;
+    padding: 7px 0 7px 0;
   }
   .contact {
     flex-direction: column;
@@ -530,9 +543,7 @@ input[type="radio"] {
 }
 @media screen and (max-width: 573px) {
   .header {
-    /* width: 100%; */
     min-width: 350px;
-    /* height: 100%; */
   }
   .wrapper {
     grid-template-columns: 1fr;
