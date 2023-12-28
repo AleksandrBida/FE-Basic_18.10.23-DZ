@@ -434,9 +434,23 @@ input[type="radio"] {
     gap: 60px;
     margin-bottom: 60px;
   }
-  .header{
+  .header {
     margin-top: 0px;
-  }
+     }
+
+  .header .container {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+.header .item2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header .item1 {
+  padding-left: 15px;
+ 
+}
 
   .foto {
     width: 100%;
@@ -452,7 +466,7 @@ input[type="radio"] {
     z-index: 1;
     position: absolute;
     top: -20px;
-    right: 0px;
+    right: 17px;
     display: flex;
     cursor: pointer;
   }
@@ -543,7 +557,7 @@ input[type="radio"] {
   .wrap.grid {
     grid-template-areas:
       "b b"
-      "a c";
+      "a c";    
   }
 
   .grid .item1 {
@@ -566,14 +580,17 @@ input[type="radio"] {
   }
   .item2 {
     justify-content: space-between;
-    background-color: #F5F5FA ;}
+    background-color: #F5F5FA ; 
+     padding: 10px 15px;
+    }
+  
   
 }
 @media screen and (max-width: 573px) {
   .header {
     min-width: 350px;
   }
-
+ 
   .blok .container{
     padding: 0px;
   }
@@ -624,7 +641,7 @@ input[type="radio"] {
 
 .wrap-cont {
   width: 100%;
-  max-width: 650px;
+  max-width: 590px;
   margin-top: 60px;
   margin-right: 60px;
 }
@@ -684,7 +701,7 @@ input[type="radio"] {
   padding: 30px;
   flex-direction: column;
   gap: 30px;
-  /* margin: 60px 0 60px ; */
+  margin: 60px 0 60px ;
 }
 ::placeholder {
   color: #b3b3ba;
@@ -697,6 +714,11 @@ input[type="radio"] {
   border-radius: 8px;
   border: 1px solid var(--Basic-White, #fff);
   background: var(--Basic-White, #fff);
+}
+.Name:focus {
+  border-radius: 8px;
+  border: 1px solid var(--Active-Regular, #24A3FF);
+  background: var(--Basic-White, #FFF);
 }
 .Name {
   align-items: flex-start;
