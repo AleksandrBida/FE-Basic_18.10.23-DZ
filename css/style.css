@@ -178,6 +178,7 @@ img {
 .Main-Alt {
   color: #46466e;
 }
+
 /*------------------------крапка в ручну---------------------*/
 
 /* (<span class="dot" > </span >) */
@@ -275,7 +276,7 @@ input[type="radio"] {
   color: #fff;
 } */
 .language-label input:checked + .radio {
-  background-color: #f00;
+  background-color: #F0145A;
   color: #f5f5fa;
 }
 
@@ -298,6 +299,10 @@ input[type="radio"] {
   -webkit-text-fill-color: transparent;
 }
 /*------------------------blok1----------------------*/
+  .blok .container{
+    padding: 0 60px 0 60px;
+  }
+
 .wrapper {
   flex-wrap: wrap;
   grid-template-columns: repeat(3, 1fr);
@@ -378,7 +383,7 @@ input[type="radio"] {
 .contact:hover {
   color: #f0145a;
 }
-/*--------------------------------adaptiv------------------------------------------------*/
+/*--------------------------------adaptiv--main----------------------------------------------*/
 @media screen and (max-width: 1320px) {
   .wrapper {
     grid-template-columns: repeat(3, 1fr);
@@ -393,8 +398,7 @@ input[type="radio"] {
 @media screen and (max-width: 1072px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
-    padding: 0 60px 0 60px;
-    gap: 60px;
+       gap: 60px;
     margin-bottom: 60px;
   }
 
@@ -424,12 +428,16 @@ input[type="radio"] {
 }
 
 @media screen and (max-width: 832px) {
+ 
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 60px;
-    padding: 0 60px 0 60px;
     margin-bottom: 60px;
   }
+  .header{
+    margin-top: 0px;
+  }
+
   .foto {
     width: 100%;
     height: 400px;
@@ -466,7 +474,6 @@ input[type="radio"] {
     justify-content: start;
     padding-top: 20px;
     gap: 20px;
-
     border-radius: 12px 12px 12px 12px;
   }
   .bg-menu.active {
@@ -559,11 +566,16 @@ input[type="radio"] {
   }
   .item2 {
     justify-content: space-between;
-  }
+    background-color: #F5F5FA ;}
+  
 }
 @media screen and (max-width: 573px) {
   .header {
     min-width: 350px;
+  }
+
+  .blok .container{
+    padding: 0px;
   }
   .wrapper {
     grid-template-columns: 1fr;
@@ -614,6 +626,7 @@ input[type="radio"] {
   width: 100%;
   max-width: 650px;
   margin-top: 60px;
+  margin-right: 60px;
 }
 
 .cont-adress {
@@ -665,14 +678,95 @@ input[type="radio"] {
   -webkit-text-fill-color: transparent;
 }
 .form-cont {
-  max-width: 590px;
+  max-width: 620px;
   border-radius: 12px;
   background: var(--Grey-Bg, #f5f5fa);
-  display: flex;
   padding: 30px;
   flex-direction: column;
-  align-items: flex-start;
   gap: 30px;
-  flex: 1 0 0;
-  margin: 60px 0 60px 60px;
+  /* margin: 60px 0 60px ; */
 }
+::placeholder {
+  color: #b3b3ba;
+}
+.placeholder {
+  padding: 15px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Basic-White, #fff);
+  background: var(--Basic-White, #fff);
+}
+.Name {
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid var(--Basic-White, #fff);
+  background: var(--Basic-White, #fff);
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  color: #b3b3ba;
+}
+.Message {
+  width: 100%;
+  height: 130px;
+  padding: 15px;
+  /* align-items: flex-start; */
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--Basic-White, #fff);
+  background: var(--Basic-White, #fff);
+  color: #b3b3ba;
+}
+.form-cont h3 {
+  color: #b3b3ba;
+}
+.form-blok1 {
+}
+
+.form-blok2 {
+  margin-top: 30px;
+}
+.Phone-number {
+  margin: 15px 0 15px;
+  color: #b3b3ba;
+}
+.Email-cont {
+  color: #b3b3ba;
+}
+.cont-btn {
+  margin-top: 30px;
+  padding: 18px 30px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  align-self: stretch;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  border: 0px;
+  background: var(--Active-Regular, #24a3ff);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+  cursor: pointer;
+}
+.cont-btn:hover {
+  border-radius: 12px;
+  background: var(--active-hover, #0085ff);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
+.cont-btn:active {
+  border-radius: 12px;
+  background: var(--active-active, #006ccf);
+  box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+}
+/*---------------adaptive-contact---------------------*/
+@media screen and (max-width: 770px) {
+  .wrapper-cont {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 60px;
+    padding: 0 60px 0 60px;
+    margin-bottom: 60px;
+  }
