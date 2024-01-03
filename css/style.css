@@ -463,7 +463,7 @@ input[type="radio"] {
   }
 
   .burger {
-    z-index: 1;
+    z-index: 10;
     position: absolute;
     top: -20px;
     right: 17px;
@@ -492,7 +492,7 @@ input[type="radio"] {
   }
   .bg-menu.active {
     display: flex;
-    z-index: 2;
+    z-index: 20;
     inset: 0;
     position: fixed;
     padding: 8px;
@@ -637,6 +637,7 @@ input[type="radio"] {
 /*-------------------------------------------contact-------------------------------*/
 .wrapper-cont {
   grid-template-columns: repeat(2, 1fr);
+   
 }
 
 .wrap-cont {
@@ -697,7 +698,7 @@ input[type="radio"] {
 .form-cont {
   max-width: 620px;
   border-radius: 12px;
-  background: var(--Grey-Bg, #f5f5fa);
+  background-color: var(--Grey-Bg, #f5f5fa);
   padding: 30px;
   flex-direction: column;
   gap: 30px;
@@ -707,6 +708,7 @@ input[type="radio"] {
   color: #b3b3ba;
 }
 .placeholder {
+  display: flex;
   padding: 15px;
   align-items: flex-start;
   gap: 10px;
@@ -715,33 +717,41 @@ input[type="radio"] {
   border: 1px solid var(--Basic-White, #fff);
   background: var(--Basic-White, #fff);
 }
-.Name:focus {
-  border-radius: 8px;
-  border: 1px solid var(--Active-Regular, #24A3FF);
-  background: var(--Basic-White, #FFF);
-}
+
 .Name {
   align-items: flex-start;
   gap: 10px;
   align-self: stretch;
   border-radius: 8px;
   border: 1px solid var(--Basic-White, #fff);
-  background: var(--Basic-White, #fff);
+  background-color: var(--Basic-White, #fff);
   width: 100%;
   padding: 15px;
   margin-bottom: 15px;
   color: #b3b3ba;
+  transition: border-color 0.3s;
 }
+.Name:hover{
+  border-color: #24A3FF;
+}
+
 .Message {
+  transition: border-color 0.3s;
   width: 100%;
+  max-width: 420px;
   height: 130px;
   padding: 15px;
-  /* align-items: flex-start; */
+  align-items: flex-start;
   gap: 10px;
   border-radius: 8px;
   border: 1px solid var(--Basic-White, #fff);
-  background: var(--Basic-White, #fff);
+  background-color: var(--Basic-White, #fff);
   color: #b3b3ba;
+  
+}
+
+.Message:hover{
+  border-color: #24A3FF;
 }
 .form-cont h3 {
   color: #b3b3ba;
@@ -755,9 +765,18 @@ input[type="radio"] {
 .Phone-number {
   margin: 15px 0 15px;
   color: #b3b3ba;
+  transition: border-color 0.3s;
+}
+.Phone-number:hover{ 
+  border-color: #24A3FF;
+
 }
 .Email-cont {
   color: #b3b3ba;
+  transition: border-color 0.3s;
+}
+.Email-cont:hover{
+  border-color: #24A3FF;
 }
 .cont-btn {
   margin-top: 30px;
