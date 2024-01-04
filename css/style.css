@@ -76,7 +76,7 @@ img {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.62;
 }
 .text-21x400 {
   font-size: 21px;
@@ -726,7 +726,9 @@ input[type="radio"] {
 .Name:hover {
   border-color: #24a3ff;
 }
-
+textarea {
+  resize: none;
+}
 .Message {
   transition: border-color 0.3s;
   width: 100%;
