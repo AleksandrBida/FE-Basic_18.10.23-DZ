@@ -276,7 +276,7 @@ input[type="radio"] {
   color: #fff;
 } */
 .language-label input:checked + .radio {
-  background-color: #F0145A;
+  background-color: #f0145a;
   color: #f5f5fa;
 }
 
@@ -299,9 +299,9 @@ input[type="radio"] {
   -webkit-text-fill-color: transparent;
 }
 /*------------------------blok1----------------------*/
-  .blok .container{
-    padding: 0 60px 0 60px;
-  }
+.blok .container {
+  padding: 0 60px 0 60px;
+}
 
 .wrapper {
   flex-wrap: wrap;
@@ -398,7 +398,7 @@ input[type="radio"] {
 @media screen and (max-width: 1072px) {
   .wrapper {
     grid-template-columns: repeat(2, 1fr);
-       gap: 60px;
+    gap: 60px;
     margin-bottom: 60px;
   }
 
@@ -427,8 +427,7 @@ input[type="radio"] {
   }
 }
 
-@media screen and (max-width: 832px) {
- 
+@media screen and (max-width: 750px) {
   .wrapper {
     grid-template-columns: repeat(1, 1fr);
     gap: 60px;
@@ -436,21 +435,20 @@ input[type="radio"] {
   }
   .header {
     margin-top: 0px;
-     }
+  }
 
   .header .container {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-.header .item2 {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.header .item1 {
-  padding-left: 15px;
- 
-}
+  .header .item2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header .item1 {
+    padding-left: 15px;
+  }
 
   .foto {
     width: 100%;
@@ -557,7 +555,7 @@ input[type="radio"] {
   .wrap.grid {
     grid-template-areas:
       "b b"
-      "a c";    
+      "a c";
   }
 
   .grid .item1 {
@@ -580,18 +578,16 @@ input[type="radio"] {
   }
   .item2 {
     justify-content: space-between;
-    background-color: #F5F5FA ; 
-     padding: 10px 15px;
-    }
-  
-  
+    background-color: #f5f5fa;
+    padding: 10px 15px;
+  }
 }
 @media screen and (max-width: 573px) {
   .header {
     min-width: 350px;
   }
- 
-  .blok .container{
+
+  .blok .container {
     padding: 0px;
   }
   .wrapper {
@@ -637,7 +633,6 @@ input[type="radio"] {
 /*-------------------------------------------contact-------------------------------*/
 .wrapper-cont {
   grid-template-columns: repeat(2, 1fr);
-   
 }
 
 .wrap-cont {
@@ -671,7 +666,9 @@ input[type="radio"] {
   max-width: 120px;
   padding-left: 10px;
 }
+.cont-fase:hover a svg path,
 .cont-fase:hover a p {
+  fill: #f0145f;
   color: #f0145a;
 }
 
@@ -702,26 +699,21 @@ input[type="radio"] {
   padding: 30px;
   flex-direction: column;
   gap: 30px;
-  margin: 60px 0 60px ;
+  margin: 60px 0 60px;
 }
 ::placeholder {
+  display: flex;
+  align-items: flex-start;
   color: #b3b3ba;
 }
 .placeholder {
-  display: flex;
   padding: 15px;
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
   border-radius: 8px;
   border: 1px solid var(--Basic-White, #fff);
   background: var(--Basic-White, #fff);
 }
 
 .Name {
-  align-items: flex-start;
-  gap: 10px;
-  align-self: stretch;
   border-radius: 8px;
   border: 1px solid var(--Basic-White, #fff);
   background-color: var(--Basic-White, #fff);
@@ -731,27 +723,24 @@ input[type="radio"] {
   color: #b3b3ba;
   transition: border-color 0.3s;
 }
-.Name:hover{
-  border-color: #24A3FF;
+.Name:hover {
+  border-color: #24a3ff;
 }
 
 .Message {
   transition: border-color 0.3s;
   width: 100%;
-  max-width: 420px;
   height: 130px;
   padding: 15px;
-  align-items: flex-start;
   gap: 10px;
   border-radius: 8px;
   border: 1px solid var(--Basic-White, #fff);
   background-color: var(--Basic-White, #fff);
   color: #b3b3ba;
-  
 }
 
-.Message:hover{
-  border-color: #24A3FF;
+.Message:hover {
+  border-color: #24a3ff;
 }
 .form-cont h3 {
   color: #b3b3ba;
@@ -767,16 +756,15 @@ input[type="radio"] {
   color: #b3b3ba;
   transition: border-color 0.3s;
 }
-.Phone-number:hover{ 
-  border-color: #24A3FF;
-
+.Phone-number:hover {
+  border-color: #24a3ff;
 }
 .Email-cont {
   color: #b3b3ba;
   transition: border-color 0.3s;
 }
-.Email-cont:hover{
-  border-color: #24A3FF;
+.Email-cont:hover {
+  border-color: #24a3ff;
 }
 .cont-btn {
   margin-top: 30px;
@@ -804,10 +792,50 @@ input[type="radio"] {
   box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
 }
 /*---------------adaptive-contact---------------------*/
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1230px) {
+  .wrapper-cont {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    padding: 0 60px 0 60px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .wrapper-cont {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    padding: 0 60px 0 60px;
+    margin-bottom: 60px;
+  }
+
+  .cont-title {
+    max-width: 322px;
+  }
+}
+@media screen and (max-width: 870px) {
   .wrapper-cont {
     grid-template-columns: repeat(1, 1fr);
     gap: 60px;
     padding: 0 60px 0 60px;
     margin-bottom: 60px;
   }
+
+  .cont-title {
+    max-width: 362px;
+  }
+}
+@media screen and (max-width: 573px) {
+  .header {
+    min-width: 340px;
+  }
+
+  .item1 .logo img {
+    width: 100%;
+    max-width: 166px;
+  }
+  .cont-title {
+    width: 100%;
+    max-width: 210px;
+  }
+}
