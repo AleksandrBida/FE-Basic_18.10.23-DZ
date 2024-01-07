@@ -8,4 +8,5 @@ $('.close').click(function () {
     $('.nav').removeClass('active');
     $('.bg-menu').removeClass('active');
 
-}) 
+})
+
