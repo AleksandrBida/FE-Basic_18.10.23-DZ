@@ -10,3 +10,12 @@ $('.close').click(function () {
 
 })
 
+$('.servic-btn').click(function () {
+    $('.modal-wraper').toggleClass('active');
+
+})
+
+$('.close-servic').click(function () {
+    $('.modal-wraper').removeClass('active');
+
+})
