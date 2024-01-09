@@ -901,30 +901,37 @@ textarea {
   background-color: #323264;
 }
 .bg-servic-2 {
+  margin-top: 80px;
   background-color: #f5f5fa;
 }
 
-.psefdo::after {
+.bg-gradient::before {
   content: "";
   display: inline-block;
   width: 100%;
-  max-width: 1480px;
+  max-width: calc(100% - 40px);
   border-radius: 0px 0px 12px 12px;
   background-color: #cacadb;
   height: 10px;
   flex-shrink: 0;
+  position: absolute;
+  bottom: -10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.psefdo2::after {
+.bg-gradient::after {
   content: "";
   display: inline-block;
   width: 100%;
-  max-width: 1440px;
+  max-width: calc(100% - 80px);
   border-radius: 0px 0px 12px 12px;
   background-color: #e7e7f2;
-  margin-bottom: 60px;
+  margin-top: 10px;
   height: 10px;
-  flex-shrink: 0;
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
 }
 .header.bg-servic {
   margin-top: 0;
@@ -932,6 +939,7 @@ textarea {
   padding-top: 50px;
 }
 .bg-gradient {
+  position: relative;
   padding-top: 60px;
   padding-bottom: 60px;
   border-radius: 0px 0px 12px 12px;
@@ -991,9 +999,6 @@ textarea {
   border-radius: 8px;
 }
 
-.card-servic3 {
-}
-
 .wrap-servic a:hover {
   color: #f0145a;
 }
@@ -1045,9 +1050,13 @@ textarea {
   max-width: 1090px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 .servic-title h3 {
   padding: 0 0 30px;
+}
+.otstup {
+  padding-bottom: 20px;
 }
 
 .servic-btn {
@@ -1169,13 +1178,17 @@ li::before {
     height: 200px;
   }
   .card-servic3 .servic-box {
-    max-width: 650px;
+    max-width: 720px;
+  }
+  .card-servic3 .servic-box p {
+    max-width: 600px;
   }
 }
 
 @media screen and (max-width: 573px) {
   .wrap-servic.grid {
     grid-template-columns: repeat(1, 1fr);
+    flex-wrap: wrap;
     gap: 30px;
     border-radius: 8px;
     margin-left: auto;
@@ -1210,11 +1223,13 @@ li::before {
     top: 10px;
     cursor: pointer;
   }
+}
+
+@media screen and (max-width: 460px) {
   .card-servic3 .servic-box p {
     max-width: 255px;
   }
 }
-
 /*---------------------------------footer----------------------------------------------*/
 .f-border {
   height: 4px;
