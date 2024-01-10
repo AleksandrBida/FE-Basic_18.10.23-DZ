@@ -993,9 +993,22 @@ textarea {
 }
 
 .wrap-servic.grid {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "a b c";
   gap: 30px;
   border-radius: 8px;
+  flex-wrap: nowrap;
+}
+
+.grid .card-servic1 {
+  grid-area: "a";
+}
+
+.grid .card-servic2 {
+  grid-area: "b";
+}
+
+.grid .card-servic3 {
+  grid-area: "c";
 }
 
 .wrap-servic a:hover {
@@ -1163,35 +1176,23 @@ li::before {
 /*----------------------------------adaptive service-----------------------------------*/
 @media screen and (max-width: 790px) {
   .wrap-servic.grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "a b"
+      "c c";
     gap: 30px;
     border-radius: 8px;
-  }
-  .card-servic3 {
-    grid-column-start: -3;
-    grid-column-end: -1;
-  }
-  .card-servic3 img {
-    width: 100%;
-    max-width: 720px;
-    height: 200px;
-  }
-  .card-servic3 .servic-box {
-    max-width: 720px;
-  }
-  .card-servic3 .servic-box p {
-    max-width: 600px;
   }
 }
 
 @media screen and (max-width: 573px) {
   .wrap-servic.grid {
-    grid-template-columns: repeat(1, 1fr);
-    flex-wrap: wrap;
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+
     gap: 30px;
     border-radius: 8px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .servic-colum {
     columns: 1;
