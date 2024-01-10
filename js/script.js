@@ -19,3 +19,9 @@ $('.close-servic').click(function () {
     $('.modal-wraper').removeClass('active');
 
 })
+
+
+
+
+
+
