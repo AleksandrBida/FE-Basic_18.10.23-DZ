@@ -206,6 +206,9 @@ img {
 .a-i-flex-start {
   align-items: flex-start;
 }
+.a-i-flex-end {
+  align-items: flex-end;
+}
 .f-d-column {
   flex-direction: column;
 }
@@ -928,8 +931,12 @@ textarea {
 }
 
 /*-------------------------------------services--------------------------------------------------------*/
+.blok-servic.container {
+  padding: 0 60px 0 60px;
+}
 .header.servic {
   position: absolute;
+  z-index: 2;
   width: 100%;
   background: none;
   margin-top: 0;
@@ -977,7 +984,7 @@ textarea {
     --Gradient-Supersoft,
     linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%)
   );
-  /* position: relative; */
+  position: relative;
 }
 .language-label-servic .radio {
   display: inline-block;
@@ -1235,9 +1242,7 @@ li::before {
     gap: 30px;
     border-radius: 8px;
   }
-  .servic .nav .nav-link {
-    color: #24a3ff;
-  }
+
   .servic:hover .nav .nav-link {
     /* text-decoration: none; */
     border-bottom: 0px;
@@ -1257,7 +1262,11 @@ li::before {
     max-width: 588px;
   }
 }
-
+@media screen and (max-width: 750px) {
+  .servic .nav .nav-link {
+    color: #24a3ff;
+  }
+}
 @media screen and (max-width: 573px) {
   .wrap-servic.grid {
     grid-template-areas:
@@ -1307,6 +1316,9 @@ li::before {
 }
 
 /*---------------------------------homepages------------------------------*/
+.blok-home.container {
+  padding: 0 60px 0 60px;
+}
 .bg-gradient-home::before {
   content: "";
   display: inline-block;
@@ -1343,6 +1355,13 @@ li::before {
   );
   position: relative;
 }
+.header.home {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  background: none;
+}
 .header.home .item2 p {
   margin-bottom: 0px;
 }
@@ -1357,12 +1376,6 @@ li::before {
   margin-bottom: 30px;
   max-width: 525px;
 }
-.header.home {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background: none;
-}
 
 section.first-home {
   background: url(../images/Symbol-h.svg) no-repeat center/contain;
@@ -1372,8 +1385,6 @@ section.first-home {
   margin-bottom: 60px;
 }
 
-.first-home h1 {
-}
 .line-home {
   width: 4px;
   align-self: stretch;
