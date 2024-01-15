@@ -624,6 +624,7 @@ input[type="radio"] {
   }
   .contact {
     flex-direction: column;
+
     gap: 25px;
   }
 
@@ -1234,6 +1235,14 @@ li::before {
 }
 
 /*----------------------------------adaptive service-----------------------------------*/
+
+@media screen and (max-width: 1074px) {
+  .Ecommerce-services {
+    margin-top: 90px;
+    padding-top: 90px;
+  }
+}
+
 @media screen and (max-width: 790px) {
   .wrap-servic.grid {
     grid-template-areas:
@@ -1261,13 +1270,24 @@ li::before {
   .card-servic3 p {
     max-width: 588px;
   }
+  .Ecommerce-services {
+    margin-top: 90px;
+    padding-top: 90px;
+  }
 }
 @media screen and (max-width: 750px) {
   .servic .nav .nav-link {
     color: #24a3ff;
   }
+  .Ecommerce-services {
+    margin-top: 60px;
+    padding-top: 60px;
+  }
 }
 @media screen and (max-width: 573px) {
+  .header.servic {
+    padding-top: 10px;
+  }
   .wrap-servic.grid {
     grid-template-areas:
       "a"
@@ -1306,6 +1326,9 @@ li::before {
     right: 30px;
     top: 10px;
     cursor: pointer;
+  }
+  .blok-servic.container {
+    padding: 0 30px;
   }
 }
 
@@ -1357,7 +1380,7 @@ li::before {
 }
 .header.home {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   top: 0;
   width: 100%;
   background: none;
@@ -1393,7 +1416,8 @@ section.first-home {
 }
 .tab-content p {
   margin-top: 30px;
-  max-width: 540px;
+  width: 100%;
+  max-width: 561px;
 }
 
 .nav-pills .nav-link {
@@ -1460,4 +1484,119 @@ section.first-home {
 }
 /*--------------------------------adaptive homepages----------------------------------*/
 
+@media screen and (max-width: 1084px) {
+  .nav.nav-pills {
+    width: 100%;
+    max-width: 375px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .blok2-home {
+    flex-direction: column;
+  }
+  .nav.nav-pills {
+    width: 100%;
+    max-width: 375px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  .nav.nav-pills {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .nav.nav-pills .nav-link {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .line-home {
+    height: 4px;
+    width: initial;
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 60px 0;
+  }
+  .card-home {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .blok2-home {
+    flex-direction: column;
+  }
+  .blok-home.container {
+    padding: 0 60px;
+  }
+  .blok2-home .nav {
+    display: flex;
+    background: none;
+  }
+  .blok2-home .nav .nav-link {
+    background: none;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background: var(
+      --Gradient-Text-Red-Reversed,
+      linear-gradient(90deg, #ef8080 0.84%, #f0145a 99.96%)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .tab-content {
+    padding: 0 60px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 648px;
+  }
+  .line-home {
+    height: 4px;
+    width: initial;
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 60px 0;
+  }
+}
+@media screen and (max-width: 475px) {
+  .card-home {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+
+  .header .blok-home.container {
+    padding: 0;
+  }
+  .blok-home.container {
+    padding: 0 30px;
+  }
+  .tab-content {
+    padding: 0 30px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 315px;
+  }
+  .first-home h1 {
+    text-align: center;
+  }
+  section.first-home {
+    background-size: url(../images/Symbol-h.svg) no-repeat center/contain;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+}
 /*---------------------------------footer----------------------------------------------*/
