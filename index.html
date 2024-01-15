@@ -103,32 +103,58 @@
                     <h1 class=" flex justify-center text-38x700w">you legal solutions provider</h1>
                 </div>
             </section>
+
+
+            <a href="#footer" class="toTop" onclick="scrollToElem(this)"><img src="images/Scroll.png" alt="toTop"></a>
+            <script>
+
+                function scrollToElem(elem) {
+                    var targetId = elem.getAttribute("href").substring(1);
+                    var targetElem = document.getElementById(targetId);
+
+
+                    window.scrollTo({
+                        top: targetElem.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+
             <section class=" ">
                 <div class=" container .blok-home">
                     <div class="home-wrapper flex justify-center">
+                        <div class="flex blok2-home ">
 
-                        <div class=" blok2-home d-flex a-i-center  ">
-                            <div class="nav nav-pills f-d-column  a-i-flex-end " id="v-pills-tab" role="tablist"
+                            <div class="nav f-d-column  a-i-flex-end  nav-pills " id="v-pills-tab" role="tablist"
                                 aria-orientation="vertical">
+
                                 <button class="nav-link active text-38x700 color-text " id="v-pills-home-tab"
                                     data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab"
-                                    aria-controls="v-pills-home" aria-selected="true">Consistent</button>
-                                <button class="nav-link  text-38x700 color-text" id="v-pills-profile-tab"
+                                    aria-controls="v-pills-Consistent" aria-selected="true">Consistent</button>
+
+                                <button class="nav-link text-38x700 color-text" id="v-pills-profile-tab"
                                     data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab"
-                                    aria-controls="v-pills-profile" aria-selected="false">Curymer oriented</button>
+                                    aria-controls="v-pills-Curymer oriented" aria-selected="false">Curymer
+                                    oriented</button>
 
                                 <button class="nav-link text-38x700 color-text" id="v-pills-messages-tab"
                                     data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab"
-                                    aria-controls="v-pills-messages" aria-selected="false">Innovative</button>
+                                    aria-controls="v-pills-Innovative" aria-selected="false">Innovative</button>
+
                                 <button class="nav-link text-38x700 color-text" id="v-pills-settings-tab"
                                     data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab"
                                     aria-controls="v-pills-settings" aria-selected="false">Business oriented</button>
+
                             </div>
+
                             <span class="line-home"></span>
-                            <div class="tab-content a-i-center" id="v-pills-tabContent">
-                                <div class="tab-pane fade show active a-i-center" id="v-pills-home" role="tabpanel"
+
+                            <div class="tab-content justify-center" id="v-pills-tabContent">
+
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                     aria-labelledby="v-pills-home-tab">
-                                    <h3 class="text-30x700w">We turn the idea of legal services</h3>
+                                    <h3 class="text-30x700w">We turn the idea of
+                                        legal services</h3>
                                     <p class="text-19x400w ">Consolidating many years of experience and practice,
                                         the
                                         company's
@@ -137,10 +163,12 @@
                                         industry.
                                         Many of them form the practice of applying the law of the sea in Ukraine.</p>
                                 </div>
+
                                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                     aria-labelledby="v-pills-profile-tab">
                                     <h3 class="text-30x700w">We turn the idea of legal services</h3>
-                                    <p class="text-19x400w">Consolidating many years of experience and practice, the
+                                    <p class="text-19x400w ">Consolidating many years of experience and practice,
+                                        the
                                         company's
                                         lawyers
                                         accompany complex projects and achieve a number of important decisions for the
@@ -151,25 +179,30 @@
                                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                     aria-labelledby="v-pills-messages-tab">
                                     <h3 class="text-30x700w">We turn the idea of legal services</h3>
-                                    <p class="text-19x400w">Consolidating many years of experience and practice, the
+                                    <p class="text-19x400w ">Consolidating many years of experience and practice,
+                                        the
                                         company's
                                         lawyers
                                         accompany complex projects and achieve a number of important decisions for the
                                         industry.
                                         Many of them form the practice of applying the law of the sea in Ukraine.</p>
                                 </div>
+
                                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                                     aria-labelledby="v-pills-settings-tab">
                                     <h3 class="text-30x700w">We turn the idea of legal services</h3>
-                                    <p class="text-19x400w">Consolidating many years of experience and practice, the
+                                    <p class="text-19x400w ">Consolidating many years of experience and practice,
+                                        the
                                         company's
                                         lawyers
                                         accompany complex projects and achieve a number of important decisions for the
                                         industry.
                                         Many of them form the practice of applying the law of the sea in Ukraine.</p>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -247,7 +280,53 @@
 
             </section>
         </div>
+        <section class="partners">
+            <div class=" big">
+                <div class="partners-logo">
+                    <p class="t-center">They already trust us</p>
+                    <div class="partners-group grid ">
 
+
+                        <div class="card-group bg-c1 ">
+                            <img src="images/logotip/hillel.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c2">
+                            <img src="images/logotip/wannabiz.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c3">
+                            <img src="images/logotip/tapgerine.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c4">
+                            <img src="images/logotip/3dlook.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c5">
+                            <img src="images/logotip/orangear.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c6">
+                            <img src="images/logotip/adtelligent.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c7">
+                            <img src="images/logotip/clickky.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c8">
+                            <img src="images/logotip/eco-leasing.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c9 ">
+                            <img src="images/logotip/ingratek.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c10">
+                            <img src="images/logotip/city-par.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c11">
+                            <img src="images/logotip/artprint.png" class="" alt="logo">
+                        </div>
+                        <div class="card-group bg-c12">
+                            <img src="images/logotip/ultimatecard.png" class="" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="bg-servic-2  ">
             <div class="container  ">
                 <div class="wrapper-servic grid justify-center">
@@ -321,7 +400,7 @@
 
 
 
-    <footer class="footer f-bg ">
+    <footer class="footer f-bg " id="#footer">
         <div class="container ">
             <div class="">
                 <div class="contact flex justify-between ">
