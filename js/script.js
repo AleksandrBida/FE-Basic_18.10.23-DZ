@@ -23,5 +23,36 @@ $('.close-servic').click(function () {
 
 
 
+function scrollToElem(elem) {
+    var targetId = elem.getAttribute("href").substring(1);
+    var targetElem = document.getElementById(targetId);
+
+
+    window.scrollTo({
+        top: targetElem.offsetTop,
+        behavior: 'smooth'
+    });
+}
+
+$('#mySlider').owlCarousel({
+    items: 1,
+    dots: true,
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            cardSlider: 1
+
+        },
+        600: {
+            cardSlider: 2
+        },
+        1000: {
+            cardSlider: 3
+
+        }
+    }
+})
 
 
