@@ -28,11 +28,23 @@ function scrollToElem(elem) {
     var targetElem = document.getElementById(targetId);
 
 
-    window.scrollTo({
+    window.scrollTop({
         top: targetElem.offsetTop,
         behavior: 'smooth'
     });
 }
+
+
+// function scrollToElem(elem) {
+//     var targetId = elem.getAttribute("href").substring(1);
+//     var targetElem = document.getElementById(targetId);
+
+
+//     window.scrollTo({
+//         top: targetElem.offsetTop,
+//         behavior: 'smooth'
+//     });
+// }
 
 $('#mySlider').owlCarousel({
     items: 1,
