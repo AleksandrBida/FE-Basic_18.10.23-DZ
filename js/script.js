@@ -27,7 +27,7 @@ $('.close-servic').click(function () {
 
 
 // function scrollToElem(elem) {
-//     var targetId = elem.getAttribute("href").substring(1);
+//     var targetId = elem.getAttribute("#footer").substring(1);
 //     var targetElem = document.getElementById(targetId);
 
 
