@@ -23,16 +23,7 @@ $('.close-servic').click(function () {
 
 
 
-function scrollToElem(elem) {
-    var targetId = elem.getAttribute("href").substring(1);
-    var targetElem = document.getElementById(targetId);
 
-
-    window.scrollTop({
-        top: targetElem.offsetTop,
-        behavior: 'smooth'
-    });
-}
 
 
 // function scrollToElem(elem) {

@@ -176,6 +176,9 @@ img {
   line-height: normal;
 }
 
+.font-w700 {
+  font-weight: 700;
+}
 .a_blak {
   color: #000;
 }
@@ -1421,7 +1424,7 @@ section.first-home {
 .tab-content p {
   margin-top: 30px;
   width: 100%;
-  max-width: 561px;
+  max-width: 750px;
 }
 
 .nav-pills .nav-link {
@@ -1453,6 +1456,10 @@ section.first-home {
   padding-bottom: 0px;
   border-radius: 0px;
 }
+
+.servic .nav-link.font-w700 {
+  padding: 0 0 8px 0;
+}
 .services-link {
   margin-top: 60px;
 }
@@ -1476,8 +1483,8 @@ section.first-home {
   color: #f0145a;
 }
 .card-home a {
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 .servic-home:hover {
   color: #f0145a;
@@ -1760,7 +1767,7 @@ section.first-home {
 }
 @media screen and (max-width: 550px) {
   .partners-group {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media screen and (max-width: 377px) {
@@ -1774,10 +1781,15 @@ section.first-home {
 }
 /*=-----------------------------------toTop------------------------------------*/
 .toTop {
-  position: absolute;
-
+  position: fixed;
   left: 735px;
   top: 635px;
+}
+.toTop svg:hover circle {
+  stroke: #f0145a;
+}
+.toTop svg:hover path {
+  stroke: #f0145a;
 }
 /*-----------------------------------card-carousel----------------------------------------*/
 
