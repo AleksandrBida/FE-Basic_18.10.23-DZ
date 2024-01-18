@@ -1774,9 +1774,9 @@ section.first-home {
   .partners-group {
     grid-template-columns: repeat(1, 1fr);
   }
-  .partners-group::-webkit-scrollbar {
+  .partners-group {
     max-width: calc(120px * 6);
-    overflow: auto;
+    overflow-y: auto;
   }
 }
 /*=-----------------------------------toTop------------------------------------*/
@@ -1825,7 +1825,7 @@ section.first-home {
   display: none;
 }
 /*--------------------------------active --- card-carousel------------------------------------*/
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 950px) {
   .cardSlider {
     flex-direction: column;
   }
