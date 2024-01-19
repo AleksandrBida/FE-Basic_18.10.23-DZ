@@ -1418,7 +1418,7 @@ section.first-home {
 }
 
 .line-home {
-  width: 4px;
+  min-width: 4px;
   background-color: rgba(255, 255, 255, 0.3);
   margin: 0 60px;
 }
@@ -1592,10 +1592,10 @@ section.first-home {
     width: 100%;
     max-width: 648px;
   }
-  .nav .line-home {
-    height: 10px;
+  .line-home {
+    min-height: 4px;
     width: initial;
-    margin: 60px 30px 60px 30px;
+    margin: 60px 15px;
   }
   .blok2-home {
     /* position: relative; */
@@ -1613,13 +1613,15 @@ section.first-home {
 }
 @media screen and (max-width: 630px) {
   section.first-home {
-    background: url(../images/Symbol-h.svg) no-repeat center/contain;
-    min-width: 100%;
-    min-height: 100vh;
+    background: url(../images/Symbol-h.svg) no-repeat center/cover;
+    min-height: 120vh;
     display: flex;
-    /* align-items: center; */
-    /* justify-content: flex-start; */
+    align-items: center;
+    justify-content: flex-start;
     margin-bottom: 60px;
+  }
+  .first-home h1 {
+    text-align: center;
   }
 }
 @media screen and (max-width: 475px) {
@@ -1628,15 +1630,15 @@ section.first-home {
     gap: 30px;
   }
   section.first-home {
-    background: url(../images/Symbol-h.svg) no-repeat center/contain;
-
-    height: 100vh;
+    background: url(../images/Symbol-h.svg) no-repeat center/cover;
+    min-height: 80vh;
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     margin-bottom: 60px;
     margin-top: 0px;
   }
+
   .header .blok-home.container {
     padding: 0;
   }
@@ -1654,7 +1656,7 @@ section.first-home {
   }
 
   .line-home {
-    height: 10px;
+    min-height: 4px;
     width: initial;
     margin: 30px 15px;
   }
@@ -1793,9 +1795,6 @@ section.first-home {
 }
 /*=-----------------------------------toTop------------------------------------*/
 .toTop {
-  display: flex;
-  width: 100%;
-  max-width: 42px;
   position: absolute;
   left: 50%;
   top: 635px;
@@ -1808,6 +1807,27 @@ section.first-home {
 .toTop svg:hover path {
   stroke: #f0145a;
 }
+
+/*----------------------------------------adaptive toTop------------------------------*/
+
+@media screen and (max-width: 630px) {
+  .toTop {
+    position: absolute;
+    left: 50%;
+    top: 770px;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .toTop {
+    position: absolute;
+    left: 50%;
+    top: 505px;
+    transform: translate(-50%, -50%);
+  }
+}
+
 /*-----------------------------------card-carousel----------------------------------------*/
 
 .owl-carousel {
